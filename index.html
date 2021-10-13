@@ -40,20 +40,7 @@ if it's not present, don't show loader */
 
 <!------------------------------------------>
 
-    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/manifest.json">
+    
 
 
     
@@ -77,34 +64,31 @@ if it's not present, don't show loader */
 
     
     <!------table---------->
-    	<style>
-main {
-  display: flex;
-  justify-content: left;
-}
-
-table {
+    	<style type="text/css">
+.TFtable {
   max-width: 100%;
 }
 
-tr:nth-child(even) {
-  background-color: #1B1212;
+.TFtable tr:nth-child(even) {
+  background-color: #1a1110;
 }
 
-th {
+ /* .TFtable tr:nth-child(odd){ 
+    background: #969696;#525252  */
+
+.TFtable th {
   background-color:#28282B;
   color: #FF5733;
 }
 
-th,
+.TFtable th,
 td {
   text-align: left;
   padding: 0.5em 1em;
 }
-
-
-.Container { width: 50%; min-width: 300px; margin: auto; }
 </style>
+
+
     <!--------------------->
 
 
@@ -180,11 +164,28 @@ a:hover {
 }
 </style>
 
+<!------event calender--------->
+<script type="text/javascript" src="event.js">
+var todaybg = '#99cccc'; // current selected date background
+var textclr = '#ffffff'; // text colour
+var linkclr = '#ff9999'; // link text colour
+var noMessage = 'No event messages to display for today';
+dA[x++] = "00000101 New Year";
+</script>
+
+<!------scale-------->
+ <style> 
+.zoom {
+    zoom: 0.78;
+}
+</style>
+
+
 
     
 </head>
 
-<body  bgcolor="black">
+<body ONLOAD="clockWork"  bgcolor="black" >
     
     <!-----------LOADER ANIMATION------->
     <div class="se-pre-con"></div>
@@ -280,7 +281,7 @@ a:hover {
                           Generation Tree:    
                         </h1>
                         <p class="myriad fw-light text-lg lh-base mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500">
-                          <strong>Who are We..?</strong>  <i> "Let's Discover our Roots" </i> 
+                          <i> "Let's Discover our Roots" </i> 
                         </p>
   <p class="myriad fw-light text-lg lh-base mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"><strong>Peres Bhatt Generation Tree </strong> provides a hierarchial list of Peres Bhatt descendants in a Tree View form. This family tree helps us to know our distant family members of our family. Apart from  increasing the bond with our family members, it also helps us to understand the blood relationships.</p>   
 
@@ -353,7 +354,13 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                 </div>
             </div> </div>
         </section>
-<!------------------->      
+<!------------------->  
+
+
+                  <br> <br>
+                  <center><div id="calendar" class="zoom"></div></center>
+
+<br> <br>    
         
         <section class="bg-black text-white py-3">
             <div class="container" id="calendar">
@@ -363,10 +370,18 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                         <div class="text-white text-5xl oswald" data-aos="fade-up" data-aos-duration="500" >EVENT CALENDER</div>
                     </div>
                   <br> <br> <br> <br>
+
+
                     
                         <div class="myriad fw-light text-base lh-lg mb-1 text-efefef" data-aos="fade-up" data-aos-duration="500">
-                     <table>     <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 1st January </th>
+
+
+
+                     <table class="TFtable">     
+
+
+                  <tr>
+                  <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 1st January </th>
                   </tr>
                   <tr>
                     <td> Juliet D'Mello 's Birthday </td>
@@ -377,6 +392,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 4th January </th>
                   </tr>
@@ -386,6 +403,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 6th January </th>
                   </tr>
@@ -401,6 +420,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 7th January </th>
                   </tr>
@@ -416,6 +437,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 8th January </th>
                   </tr>
@@ -428,6 +451,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 9th January </th>
                   </tr>
@@ -437,6 +462,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 10th January </th>
                   </tr>
@@ -449,6 +476,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 12th January </th>
                   </tr>
@@ -458,6 +487,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 18th January </th>
                   </tr>
@@ -468,6 +499,11 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                     <td> Tanushree's Birthday </td>
                   </tr>
                   <tr>
+                    <td></td>
+                  </tr>
+
+
+                  <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 19th January </th>
                   </tr>
                   <tr>
@@ -476,6 +512,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 23rd January </th>
                   </tr>
@@ -485,6 +523,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 25th January </th>
                   </tr>
@@ -494,6 +534,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 30th January </th>
                   </tr>
@@ -503,6 +545,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 2nd February </th>
                   </tr>
@@ -515,6 +559,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 3rd February </th>
                   </tr>
@@ -524,6 +570,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 5th February </th>
                   </tr>
@@ -533,6 +581,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 8th February </th>
                   </tr>
@@ -542,6 +592,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 9th February </th>
                   </tr>
@@ -551,6 +603,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 10th February </th>
                   </tr>
@@ -563,6 +617,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 12th February </th>
                   </tr>
@@ -572,6 +628,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 15th February </th>
                   </tr>
@@ -581,6 +639,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 16th February </th>
                   </tr>
@@ -590,6 +650,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 17th February </th>
                   </tr>
@@ -599,6 +661,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 21st February </th>
                   </tr>
@@ -608,6 +672,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 24th February </th>
                   </tr>
@@ -620,6 +686,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 25th February </th>
                   </tr>
@@ -629,6 +697,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 2nd March </th>
                   </tr>
@@ -641,6 +711,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 3rd March </th>
                   </tr>
@@ -650,6 +722,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 10th March </th>
                   </tr>
@@ -659,6 +733,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 13th March </th>
                   </tr>
@@ -668,6 +744,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 14th March </th>
                   </tr>
@@ -677,6 +755,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 15th March </th>
                   </tr>
@@ -686,6 +766,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 17th March </th>
                   </tr>
@@ -695,6 +777,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 18th March </th>
                   </tr>
@@ -704,6 +788,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 19th March </th>
                   </tr>
@@ -713,6 +799,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 21st March </th>
                   </tr>
@@ -722,6 +810,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 23rd March </th>
                   </tr>
@@ -731,6 +821,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 1st April </th>
                   </tr>
@@ -740,6 +832,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 2nd April </th>
                   </tr>
@@ -752,6 +846,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 3rd April </th>
                   </tr>
@@ -761,6 +857,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 11th April </th>
                   </tr>
@@ -770,6 +868,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 13th April </th>
                   </tr>
@@ -779,6 +879,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 17th April </th>
                   </tr>
@@ -788,6 +890,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 19th April </th>
                   </tr>
@@ -797,6 +901,12 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td> Gladwin Peres Bhatt's Birthday </td>
                   </tr>
+                  </tr>
+                  <tr>
+                    <td></td>
+                  </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 21th April </th>
                   </tr>
@@ -806,6 +916,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 28th April </th>
                   </tr>
@@ -815,6 +927,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 30th April </th>
                   </tr>
@@ -824,6 +938,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 1st May </th>
                   </tr>
@@ -833,6 +949,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 2nd May </th>
                   </tr>
@@ -842,6 +960,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 2nd May </th>
                   </tr>
@@ -851,6 +971,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 4th May </th>
                   </tr>
@@ -869,6 +991,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 8th May </th>
                   </tr>
@@ -878,6 +1002,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 11th May </th>
                   </tr>
@@ -887,6 +1013,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 13th May </th>
                   </tr>
@@ -896,6 +1024,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 14th May </th>
                   </tr>
@@ -905,6 +1035,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 19th May </th>
                   </tr>
@@ -920,6 +1052,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 20th May </th>
                   </tr>
@@ -929,6 +1063,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 24th May </th>
                   </tr>
@@ -938,6 +1074,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 25th May </th>
                   </tr>
@@ -947,6 +1085,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 26th May </th>
                   </tr>
@@ -959,6 +1099,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 27th May </th>
                   </tr>
@@ -971,6 +1113,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 28th May </th>
                   </tr>
@@ -983,6 +1127,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 29th May </th>
                   </tr>
@@ -995,6 +1141,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 30th May </th>
                   </tr>
@@ -1007,6 +1155,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 31st May </th>
                   </tr>
@@ -1016,6 +1166,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 2nd June </th>
                   </tr>
@@ -1028,6 +1180,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 10th June </th>
                   </tr>
@@ -1040,6 +1194,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 12th June </th>
                   </tr>
@@ -1049,6 +1205,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 16th June </th>
                   </tr>
@@ -1061,6 +1219,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 17th June </th>
                   </tr>
@@ -1070,6 +1230,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 19th June </th>
                   </tr>
@@ -1079,6 +1241,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 21th June </th>
                   </tr>
@@ -1088,6 +1252,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 23rd June </th>
                   </tr>
@@ -1097,6 +1263,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 25th June </th>
                   </tr>
@@ -1109,6 +1277,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 27th June </th>
                   </tr>
@@ -1118,6 +1288,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 28th June </th>
                   </tr>
@@ -1127,6 +1299,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 5th July </th>
                   </tr>
@@ -1136,6 +1310,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 8th July </th>
                   </tr>
@@ -1148,6 +1324,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 10th July </th>
                   </tr>
@@ -1158,6 +1336,11 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                     <td> Michael Gojer's Birthday </td>
                   </tr>
                   <tr>
+                    <td></td>
+                  </tr>
+
+
+                  <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 12th July </th>
                   </tr>
                   <tr>
@@ -1166,6 +1349,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 15th July </th>
                   </tr>
@@ -1175,6 +1360,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 23rd July </th>
                   </tr>
@@ -1184,6 +1371,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 25th July </th>
                   </tr>
@@ -1193,6 +1382,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 28th July </th>
                   </tr>
@@ -1202,6 +1393,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 28th July </th>
                   </tr>
@@ -1214,6 +1407,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 29th July </th>
                   </tr>
@@ -1223,6 +1418,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 6th August </th>
                   </tr>
@@ -1232,6 +1429,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 7th August </th>
                   </tr>
@@ -1241,6 +1440,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 8th August </th>
                   </tr>
@@ -1250,6 +1451,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 9th August </th>
                   </tr>
@@ -1262,6 +1465,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 10th August </th>
                   </tr>
@@ -1274,6 +1479,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 11th August </th>
                   </tr>
@@ -1283,6 +1490,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 13th August </th>
                   </tr>
@@ -1298,6 +1507,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 14th August </th>
                   </tr>
@@ -1307,6 +1518,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 25th August </th>
                   </tr>
@@ -1316,6 +1529,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 26th August </th>
                   </tr>
@@ -1325,6 +1540,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 31st August </th>
                   </tr>
@@ -1334,6 +1551,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 5th September </th>
                   </tr>
@@ -1346,6 +1565,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 6th September </th>
                   </tr>
@@ -1358,6 +1579,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 2nd September </th>
                   </tr>
@@ -1367,6 +1590,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 11th September </th>
                   </tr>
@@ -1376,6 +1601,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 15th September </th>
                   </tr>
@@ -1385,6 +1612,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 16th September </th>
                   </tr>
@@ -1394,6 +1623,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 17th September </th>
                   </tr>
@@ -1404,15 +1635,21 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                     <td> Alphonso Rasquinha's Death Aniversary </td>
                   </tr>
                   <tr>
-					  <td></td></tr>
-					 <tr>  <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 23rd September </th>
+					       <td></td>
+                  </tr>
+
+
+					       <tr>  
+                  <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 23rd September </th>
                   </tr>
                   <tr>
                     <td> Denson Jolon D'Mello's Birthday </td>
                   </tr>
                  <tr>
                     <td></td>
-                  </tr><tr>
+                  </tr>
+
+                  <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 24th September </th>
                   </tr>
                   <tr>
@@ -1421,6 +1658,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 25th September </th>
                   </tr>
@@ -1430,6 +1669,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 27th September </th>
                   </tr>
@@ -1439,15 +1680,19 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 29th September </th>
                   </tr>
                   <tr>
                     <td> Michael Patrao's Birthday </td>
                   </tr>
-			<tr>
+			             <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 30th September </th>
                   </tr>
@@ -1457,6 +1702,7 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
 
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 3rd October </th>
@@ -1469,6 +1715,7 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   </tr>
 
 
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 4th October </th>
                   </tr>
@@ -1478,6 +1725,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 7th October </th>
                   </tr>
@@ -1487,6 +1736,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 8th October </th>
                   </tr>
@@ -1496,6 +1747,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 9th October </th>
                   </tr>
@@ -1505,6 +1758,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 10th October </th>
                   </tr>
@@ -1514,6 +1769,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 15th October </th>
                   </tr>
@@ -1523,6 +1780,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 18th October </th>
                   </tr>
@@ -1532,6 +1791,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 18th October </th>
                   </tr>
@@ -1541,7 +1802,9 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
-			<tr>
+
+
+			               <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 21st October </th>
                   </tr>
                   <tr>
@@ -1550,11 +1813,14 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td> Flavian Peres Bhatt's Birthday </td>
                   </tr>
-			<tr>
+			             <tr>
                     <td> Blessin Jane Peres's Birthday </td>
                   </tr>
                   <tr>
                     <td></td>
+                  </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 22nd October </th>
                   </tr>
@@ -1568,7 +1834,7 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                     <td></td>
                   </tr>
                   
-                  </tr>
+                  
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 25th October </th>
                   </tr>
@@ -1581,6 +1847,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 27th October </th>
                   </tr>
@@ -1590,6 +1858,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 28th October </th>
                   </tr>
@@ -1599,6 +1869,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 31st October </th>
                   </tr>
@@ -1611,6 +1883,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 8th November </th>
                   </tr>
@@ -1620,6 +1894,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 10th November </th>
                   </tr>
@@ -1629,6 +1905,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 11th November </th>
                   </tr>
@@ -1638,6 +1916,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 14th November </th>
                   </tr>
@@ -1647,6 +1927,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 16th November </th>
                   </tr>
@@ -1659,6 +1941,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 18th November </th>
                   </tr>
@@ -1674,6 +1958,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 25th November </th>
                   </tr>
@@ -1683,6 +1969,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 8th December </th>
                   </tr>
@@ -1692,6 +1980,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 7th December </th>
                   </tr>
@@ -1701,6 +1991,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 10th December </th>
                   </tr>
@@ -1710,6 +2002,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 11th December </th>
                   </tr>
@@ -1722,6 +2016,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 15th December </th>
                   </tr>
@@ -1731,6 +2027,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 16th December </th>
                   </tr>
@@ -1740,6 +2038,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 19th December </th>
                   </tr>
@@ -1749,6 +2049,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 20th December </th>
                   </tr>
@@ -1758,6 +2060,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 26th December </th>
                   </tr>
@@ -1773,6 +2077,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 29th December </th>
                   </tr>
@@ -1782,6 +2088,8 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td></td>
                   </tr>
+
+                  
                 </table>
                         </div>
                       
