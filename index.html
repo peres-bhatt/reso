@@ -195,6 +195,9 @@ dA[x++] = "00000101 New Year";
 </style>
 
 
+
+
+
 <!-----Footer------->
 <style type="text/css">
   .limg {
@@ -211,11 +214,126 @@ dA[x++] = "00000101 New Year";
 }
 </style>
 
+<!-----Jump to top Button------->
 
-    
+<style>
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: #D5D8DC;
+  color: none;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 100%;
+  opacity: 0.3;
+}
+
+#myBtn img{
+ vertical-align: middle;
+}
+
+#myBtn:hover {
+  background-color: #D5D8DC;
+opacity: 0.9;
+}
+</style>
+
+<!-----------------feedback------------
+    <style>
+
+      #box {
+  margin: auto;
+  width: 100%;
+  border: 0px solid black;
+  padding: 0px;
+
+ background-color: solid white;  
+      }
+    </style>      --------->
+
+
+<!------target new page feedback----->
+
+<script type="text/javascript">
+function submitForm()
+{
+document.form1.target = "myActionWin";
+window.open("","myActionWin","width=500,height=500,toolbar=0");
+document.form1.submit();
+}
+</script>
+
+
+<!-----------------------formcarry style-------------->
+
+<link rel="stylesheet" href="formcarry-form.css" />
+
+
+
+<!--------------------------------->
+
+
+
 </head>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <body ONLOAD="clockWork"  bgcolor="black" >
+
+<!---------------Jump to top------------->
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top" ><img src="https://static.thenounproject.com/png/636009-200.png" alt="buttonpng" border="0" style= " width:50px; height:50px; text-align: center:;  "/></button>
+
+
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+
+
+
+
     
     <!-----------LOADER ANIMATION------->
     <div class="se-pre-con"></div>
@@ -242,15 +360,26 @@ dA[x++] = "00000101 New Year";
               <span class="underline_header_anime"></span>
           </li>
 
-          <li class="nav-item active">
-            <a class="nav-link text-uppercase titilium text-white d-inline-block pb-0" href="#history">About</a>
-              <span class="underline_header_anime"></span>
-          </li>
 
           <li class="nav-item ">
             <a class="nav-link text-uppercase titilium text-white d-inline-block pb-0" href="#Kalendar">Event-Calender</a>
               <span class="underline_header_anime"></span>
-          </li>
+              </li>
+
+           <li class="nav-item ">
+            <a class="nav-link text-uppercase titilium text-white d-inline-block pb-0" href="#photos">Golden Memories</a>
+              <span class="underline_header_anime"></span>
+              </li>
+
+           <li class="nav-item ">
+            <a class="nav-link text-uppercase titilium text-white d-inline-block pb-0" href="#Remeno">Sweet Reminiscence</a>
+              <span class="underline_header_anime"></span>
+              </li>
+
+               <li class="nav-item active">
+            <a class="nav-link text-uppercase titilium text-white d-inline-block pb-0" href="#history">About</a>
+              <span class="underline_header_anime"></span>
+ 			 </li>
         </ul>
       </div>
     </div>
@@ -334,11 +463,11 @@ dA[x++] = "00000101 New Year";
                    <div class="col-11 mx-auto">
                        <div class="row align-items-center">
                         <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                            <img src="https://www.dropbox.com/s/asvp4a4g952ah3p/1623047996193.png?raw=1" alt="Photo Gallery" class="img-fluid">
+                            <a href="https://photos.app.goo.gl/8V2FxrUzH4R2tAmA6">  <img src="https://www.dropbox.com/s/asvp4a4g952ah3p/1623047996193.png?raw=1" alt="Photo Gallery" class="img-fluid" id="photos"> </a>
                          </div>
 
                          <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
-                             <h1 class="fw-normal oswald text-3eb48f" data-aos="fade-up" data-aos-duration="500">Golden Memories</h1>
+                             <h1 class="fw-normal oswald text-3eb48f" data-aos="fade-up" data-aos-duration="500" >Golden Memories</h1>
                              
    <div class="myriad fw-light text-base lh-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500">
                                  <small>
@@ -347,8 +476,7 @@ dA[x++] = "00000101 New Year";
                              </div>  
 
                              <p class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500">
-                                "Golden Memories" is an Album, a collection of photos from Peres Bhatt family where the memories we've made along the way are lived forever.<br>
-Our existence may be so ephemeral, but memories last forever.<br><br>
+                                <b>“Golden Memories”</b> is an album that captures the memories we’ve made along the way and keeps them alive forever. It’s a collection of photos from the Peres Bhatt family that commemorates the moments we’ve shared together. Our existence may be ephemeral, but memories last forever. The album is like a treasure trove of golden memories that we can revisit and cherish for years to come.<br><br>
 <a href="https://photos.app.goo.gl/8V2FxrUzH4R2tAmA6" target="_blank"><font color="#9bddff">View Photo Gallery..</font></a>
                              </p>
                          </div>
@@ -366,10 +494,10 @@ Our existence may be so ephemeral, but memories last forever.<br><br>
                    <div class="col-11 mx-auto">
                        <div class="row align-items-center">
                         <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                            <img src="https://www.dropbox.com/s/p1kp0yatk89i2rf/card.png?raw=1" alt="Card Collection" class="img-fluid">
+                           <a href="https://photos.app.goo.gl/YpiX32xSaJ4NHCTT9"> <img src="https://www.dropbox.com/s/p1kp0yatk89i2rf/card.png?raw=1" alt="Card Collection" class="img-fluid" id="Remeno"></a>
                          </div>
                          <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
-                             <h1 class="fw-normal oswald text-3eb48f" data-aos="fade-up" data-aos-duration="500">Sweet Reminiscence</h1>
+                             <h1 class="fw-normal oswald text-3eb48f" data-aos="fade-up" data-aos-duration="500" >Sweet Reminiscence</h1>
                              
    <div class="myriad fw-light text-base lh-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500">
                                  <small>
@@ -377,8 +505,7 @@ Our existence may be so ephemeral, but memories last forever.<br><br>
                                  </small>
                              </div>                           
                              <p class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500">
-                                "Sweet Reminiscence" is an Album of cards from various events of Peres Bhatt family, Recollecting the past moments of our family and bringing memories alive.<br><br>
-A garden of sweet memories, treasured always in our thoughts, Forever in our hearts, Commemorating the moments of yesteryear.<br><br>
+                               <b>“Sweet Reminiscence”</b> is a collection of memories that are cherished and treasured as an Album. This Album is like a garden of sweet memories that are forever in our hearts and treasured always in our thoughts. The album commemorates the various events of yesteryear and brings them alive, like a beautiful bouquet of flowers that never fades away.<br><br>
 <a href="https://photos.app.goo.gl/YpiX32xSaJ4NHCTT9" target="_blank"><font color="#9bddff">View Card Collection..</font></a>
                              </p>
                          </div>
@@ -432,6 +559,16 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   </tr>
                   <tr>
                     <td> Marvin Coelho's Birthday </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 5th January </th>
+                  </tr>
+                  <tr>
+                    <td> Lavina (D'Souza) Peres's Birthday </td>
                   </tr>
                   <tr>
                     <td></td>
@@ -651,6 +788,19 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                     <td></td>
                   </tr>
 
+                   <tr>
+                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 11th February </th>
+                  </tr>
+                  <tr>
+                    <td> Dr. Peter & Daisy Carmel (D'Mello) Fernandes's Wedding Anniversary </td>
+                  </tr>
+                  <tr>
+                    <td> Mahima Fernandes's Birthday </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                  </tr>                 
+
 
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 12th February </th>
@@ -774,6 +924,9 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td> Nayana (Rasquinha) Naik's Birthday </td>
                   </tr>
+                                    <tr>
+                    <td> Percival Lobo's Birthday </td>
+                  </tr>
                   <tr>
                     <td></td>
                   </tr>
@@ -874,7 +1027,7 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                     <td> Jude Peres Bhatt's Birthday </td>
                   </tr>
                   <tr>
-                    <td> Joanna Peres Bhatt's Birthday	(2020 | Mangalore)</td>
+                    <td> Joanna Peres Bhatt's Birthday	(2020)</td>
                   </tr>
                   <tr>
                     <td></td>
@@ -891,6 +1044,15 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                     <td></td>
                   </tr>
 
+                  <tr>
+                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 5th April </th>
+                  </tr>
+                  <tr>
+                    <td> Fabian Peres Bhatt's death Anniversary  (2022 | Our lady of Holy Rosary Cemetery, Jeppu, Mangalore)</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                  </tr>
 
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 11th April </th>
@@ -929,7 +1091,7 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 19th April </th>
                   </tr>
                   <tr>
-                    <td> Jyothsna Winifred (D'Souza) Peres Bhatt's Birthday </td>
+                    <td> Jyothsna Winifred (D'Souza) Peres Bhatt's Birthday (1981)</td>
                   </tr>
                   <tr>
                     <td> Gladwin Gilbert Peres Bhatt's Birthday </td>
@@ -1033,7 +1195,7 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 11th May </th>
                   </tr>
                   <tr>
-                    <td> Fabian Peres Bhatt wedded Flavian Lobo (1981 | Rosario Cathedral, Mangalore) </td>
+                    <td> Lt. Fabian Peres Bhatt wedded Flavian Lobo (1981 | Rosario Cathedral, Mangalore) </td>
                   </tr>
                   <tr>
                     <td></td>
@@ -1197,7 +1359,7 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 2nd June </th>
                   </tr>
                   <tr>
-                    <td> Samatha Dharmaraj's Birthday </td>
+                    <td> Samatha Benedict's Birthday </td>
                   </tr>
                   <tr>
                     <td> Nancy Rita D'Mello's Death Anniversary (2006 | Modankap, Bantwal) </td>
@@ -1614,12 +1776,21 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 11th September </th>
                   </tr>
                   <tr>
-                    <td> Fabian Peres Bhatt's Birthday </td>
+                    <td>Lt. Fabian Peres Bhatt's Birthday (1952) </td>
                   </tr>
                   <tr>
                     <td></td>
                   </tr>
 
+                  <tr>
+                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 14th September </th>
+                  </tr>
+                  <tr>
+                    <td>Lt. Merryl Menezes married Grace Soans (1986) </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                  </tr>
 
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 15th September </th>
@@ -1823,11 +1994,11 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                   <tr>
                     <td> Flavian (Lobo) Peres Bhatt's Birthday </td>
                   </tr>
-			             <tr>
+			      <tr>
                     <td> Blessin Jane Peres's Birthday </td>
                   </tr>
                   <tr>
-                    <td> Desmond & Vinitha d'mello's Wedding Anniversary </td>
+                    <td> Desmond - Vinitha D'Mello's Wedding Anniversary. </td>
                   </tr>
                   <tr>
                     <td></td>
@@ -1983,12 +2154,32 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                     <td></td>
                   </tr>
 
+                   <tr>
+                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 24th November </th>
+                  </tr>
+                  <tr>
+                    <td> Lt. Merryl Menezes's Birthday (1954) </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                  </tr>                 
+
 
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 25th November </th>
                   </tr>
                   <tr>
                     <td> Cosmos Peres Bhatt's Death Anniversary </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                  </tr>
+
+                   <tr>
+                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 3rd December </th>
+                  </tr>
+                  <tr>
+                    <td> Merryl Menezes Death Anniversary (2021) </td>
                   </tr>
                   <tr>
                     <td></td>
@@ -2102,6 +2293,16 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                     <td></td>
                   </tr>
 
+                  <tr>
+                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 27th December </th>
+                  </tr>
+                  <tr>
+                    <td> Mukesh wedded Samatha Benedict (2021 | St. Francis Xavier's Cathedral, Bangalore) </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                  </tr>
+
 
                   <tr>
                     <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 29th December </th>
@@ -2120,10 +2321,57 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
                     </div>
                 </div>
         </section>
+
+ 
         
         
         <div class="spectrum-background"><br><br> </div>
-    
+
+<!-------------->
+
+
+<!-- 👇️ will load page content in this div  
+    <div id="box"></div> 
+
+    <script>
+    const box = document.getElementById('box');
+
+
+box.innerHTML =
+  '<object  type="text/html" data="https://peres-bhatt.github.io/feedback.github.io/" width="100%" height="600px style="overflow:auto;border:5px ridge blue"</object>';
+
+    </script>
+
+</div>          -->
+
+<!------feedback---->
+        
+   <div class="formcarry-container">
+
+
+<form name="form1" action="https://formcarry.com/s/Ed-JON03lV" method="POST" class="formcarry-form" accept-charset="UTF-8">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="fullName" required />
+
+        <label for="email">Your Email Address</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Your Message</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+        <button type="submit" name="btnSubmit" onclick="submitForm()">Send</button>
+
+      </form>
+    </div>
+          <br><br><br>                   
+
+<!------warning---->
+<div style="background-color:black;color:white;padding:10px">Attention:</div>
+<div style="background-color:none;padding:30px 30px 30px">
+
+The <strong>Misuse of data and images </strong> from the website is not permitted. Please refrain from any unauthorized use of the data and images in any way that may violate the term of use.<br><br>
+
+
        
        
 <!-------------------Footer---------------------->        
@@ -2131,23 +2379,35 @@ A garden of sweet memories, treasured always in our thoughts, Forever in our hea
     <div class="container py-3">
         <div class="row m-3">
 
-          <div style= "padding: 5px;  width: 100px; display: inline-block;">
+
+
+          <div style= "padding: 5px;  width: 100px; display: inline-block; align: center; text-align:center;">
+
             <img  src="https://www.dropbox.com/s/0fh0grgmvjnmadz/1634186403676.png?raw=1">
           </div>
 
             <div style="padding: 5px;  width: 500px; display: inline-block;" class="ltxt col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 my-auto">
+                         
                 <img src="https://www.dropbox.com/s/tlwd2d5459btdws/1631842701606.png?raw=1" align="center" alt="EMANJOH" class="img-fluid  w-25"><br><font color="#A9A9A9"> Jonah Aloysius Peris Bhatt </font>
             </div>
 
-            <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 my-2">
-                
-                 
-
-       
-           
+            <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 my-2">  
         </div>
     </div>
-</div>    </div>
+</div>    </div> 
+
+  
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 
