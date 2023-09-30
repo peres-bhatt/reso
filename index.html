@@ -9,6 +9,37 @@
   <link rel="icon" href="https://www.dropbox.com/s/irehp4iclngp3fi/1631674473756.png?raw=1" type ="image/x-icon">
 
 
+<!----change tab------->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="I-Miss-You-master/jquery.iMissYou.js"></script>
+<script>
+
+// Get current title and icon
+var title = $('title').text();
+var favicon = $('link[rel=icon]').attr('href');
+var newtitle = 'Verify your Credentials';
+
+// Active
+window.addEventListener('focus', resetTitleicon);
+
+// Inactive
+window.addEventListener('blur', changeTitleicon);
+
+// Change page title and icon
+function changeTitleicon(){
+     $("title").text(newtitle); 
+     $('link[rel=icon]').attr('href', 'shield.ico');
+}
+
+// Reset the page title and icon
+function resetTitleicon(){
+     $('title').text(title);
+     $('link[rel=icon]').attr('href', favicon);
+}
+</script>
+
+<!----dailog box----->
     <style>
         html, body {
             margin: 0;
