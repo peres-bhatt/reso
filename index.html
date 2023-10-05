@@ -1,334 +1,399 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noindex, nofollow">
+<!DOCTYPE html>
+<html>
+<head>
 
-     <title>PERES BHATT G-TREE</title>
-  <link rel="icon" href="https://www.dropbox.com/s/irehp4iclngp3fi/1631674473756.png?raw=1" type ="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no">
 
 
-<!----change tab------->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-<script src="I-Miss-You-master/jquery.iMissYou.js"></script>
-<script>
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://unpkg.com/splitting@1.0.0/dist/splitting.css'><link rel="stylesheet" href="lstyle.css">
 
-// Get current title and icon
-var title = $('title').text();
-var favicon = $('link[rel=icon]').attr('href');
-var newtitle = 'Verify your Credentials';
 
-// Active
-window.addEventListener('focus', resetTitleicon);
 
-// Inactive
-window.addEventListener('blur', changeTitleicon);
 
-// Change page title and icon
-function changeTitleicon(){
-     $("title").text(newtitle); 
-     $('link[rel=icon]').attr('href', 'shield.ico');
+  <link rel="stylesheet" href="pstyle.css">
+
+<!------------------------------------------------------------------------------------------------------>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.9/tailwind.min.css"
+        integrity="sha512-SvJR34InARUfJb279ipE/gjQqX11MDKaly9MNb0vevuWQJmZ23UH7F/65ScEsvLI+myKGbdfA1En82wVSCHQ8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="css/snap-scroll.css" /> -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="formcarry-form.css" />
+
+
+
+
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
 }
 
-// Reset the page title and icon
-function resetTitleicon(){
-     $('title').text(title);
-     $('link[rel=icon]').attr('href', favicon);
+.top-container {
+  background-image: url("WallpaperDog-20487262.jpg");
+  padding: 5px;
+  text-align: center;
+align-items: center;
+display: flex;
+  justify-content: center;
+
 }
+
+.header {
+  padding: 0px 0px;
+z-index: 10;
+font-weight: bold;
+   color: #204754;
+   font-family: "Nunito", sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   font-size: 2px;
+   position: -webkit-sticky;
+   position: sticky;
+  top: 0;
+}
+
+
+
+
+</style>
+
+<!------------>
+   <link rel="stylesheet" href="jjstyle.css" /> 
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+<!-----parallax----->
+
+<style>
+.parallax {
+  /* The image used */
+  background-image: url("p1.jpg"); 
+
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+
+
+
+
+<!------form--------->
+
+    <style>
+      body {
+        margin: 20px;
+
+      }
+
+      #box {
+        border: 2px solid white;
+
+      }
+    
 </script>
 
-<!----dailog box----->
-    <style>
-        html, body {
-            margin: 0;
-            width: 100%;
-            height: 100%;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        #dialogText {
-            color: white;
-            background-color: #333333;
-        }
-        
-        #dialogWrap {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: table;
-            background-color: #EEEEEE;
-        }
-        
-        #dialogWrapCell {
-            display: table-cell;
-            text-align: center;
-            vertical-align: middle;
-        }
-        
-        #mainDialog {
-            max-width: 400px;
-            margin: 5px;
-            border: solid #AAAAAA 1px;
-            border-radius: 10px;
-            box-shadow: 3px 3px 5px 3px #AAAAAA;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #FFFFFF;
-            overflow: hidden;
-            text-align: left;
-        }
-        #mainDialog > * {
-            padding: 10px 30px;
-        }
-        #passArea {
-            padding: 20px 30px;
-            background-color: white;
-        }
-        #passArea > * {
-            margin: 5px auto;
-        }
-        #pass {
-            width: 100%;
-            height: 40px;
-            font-size: 30px;
-        }
-        
-        #messageWrapper {
-            float: left;
-            vertical-align: middle;
-            line-height: 30px;
-        }
-        
-        .notifyText {
-            display: none;
-        }
-        
-        #invalidPass {
-            color: red;
-        }
-        
-        #success {
-            color: green;
-        }
-        
-        #submitPass {
-            font-size: 20px;
-            border-radius: 5px;
-            background-color: #E7E7E7;
-            border: solid gray 1px;
-            float: right;
-            cursor: pointer;
-        }
-        #contentFrame {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-        #attribution {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            text-align: center;
-            padding: 10px;
-            font-weight: bold;
-            font-size: 0.8em;
-        }
-        #attribution, #attribution a {
-            color: #999;
-        }
-        .error {
-            display: none;
-            color: red;
-        }
-    </style>
-  </head>
-  <body>
-    <iframe id="contentFrame" frameBorder="0" allowfullscreen></iframe>
-    <div id="dialogWrap">
-        <div id="dialogWrapCell">
-            <div id="mainDialog">
-                <div id="dialogText">Peres Bhatt G-Tree is password protected.</div>
-                <div id="passArea">
-                    <p id="passwordPrompt">Password</p>
-                    <input id="pass" type="password" name="pass" autofocus>
-                    <div>
-                        <span id="messageWrapper">
-                            <span id="invalidPass" class="error">Sorry, please try again.</span>
-                            <span id="trycatcherror" class="error">Sorry, something went wrong.</span>
-                            <span id="success" class="notifyText">Success!</span>
-                            &nbsp;
-                        </span>
-                        <button id="submitPass" type="button">Submit</button>
-                        <div style="clear: both;"></div>
-                    </div>
+
+
+<!------scale-------->
+
+ <style> 
+.zoom {
+    zoom: 0.78;
+}
+</style>
+
+
+
+
+</head>
+<body>
+
+<div class="top-container">
+
+<div id="history">
+    <h1>Peres Bhatt
+      <!-- Scroller Start -->
+      
+      <div class="scroller">
+
+        <span>
+          Ancestral Lineage<br/>
+           Relation Tree<br/>
+         Genealogy</br>
+          Generation Tree<br/> 
+        </span>
+</div>
+      
+      <!-- Scroller End -->
+    </h1>
+
+  </div>
+
+</div>
+
+<div class="header" id="myHeader">
+
+<header id="nav-menu" aria-label="navigation bar" style="background-color:white;">
+
+      <div class="container">
+        <div class="nav-start">
+
+
+
+          <a class="logo" href="">
+            <img
+              src="https://www.dropbox.com/s/irehp4iclngp3fi/1631674473756.png?raw=1"
+              width="55"
+              height="55"
+              alt="Inc Logo"
+            />
+          </a>
+
+
+          <nav class="menu">
+            <ul class="menu-bar">
+              <li>
+
+
+                <button
+                  class="nav-link dropdown-btn"
+                  data-dropdown="dropdown1"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-label="browse"
+                >
+                  Browse
+                  <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                </button>
+               <div id="dropdown1" class="dropdown">
+                  <ul role="menu">
+
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#photos">
+                        <img src="https://www.dropbox.com/s/asvp4a4g952ah3p/1623047996193.png?raw=1" class="icon" width="55" height="45" />
+                        <div>
+                          <span class="dropdown-link-title">Golden Memories</span>
+                          <p>A Album of Photo Collections</p>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#Remeno">
+                        <img src="https://www.dropbox.com/s/p1kp0yatk89i2rf/card.png?raw=1" class="icon" width="55" height="45" />
+                        <div>
+                          <span class="dropdown-link-title">Sweet Reminiscence</span>
+                          <p>The repository for event cards</p>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#Kalendar">
+                        <img src="cal.png" class="icon" width="55" height="45" />
+                        <div>
+                          <span class="dropdown-link-title">Event Calendar</span>
+                          <p>Today's Events</p>
+                        </div>
+                      </a>
+
+                   
+                  </ul>
                 </div>
-                <div id="securecontext" class="error">
-                    <p>
-                        Sorry, but password protection only works over a secure connection. Please load this page via HTTPS.
-                    </p>
-                </div>
-                <div id="nocrypto" class="error">
-                    <p>
-                        Your web browser appears to be outdated. Please visit this page using a modern browser.
-                    </p>
-                </div>
-            </div>
+              </li>
+
+
+               
+              <li><a class="nav-link" href="#GTREE">Generation Tree</a></li>
+              <li><a class="nav-link" href="#contact">Contact Me</a></li>
+              <li><a class="nav-link" href="#history">About</a></li>
+            </ul>
+          </nav>
         </div>
-    </div>
-    <div id="attribution">
-        Powered by <a>Emanjoh</a>
-    </div>
-    <script>
-    (function() {
 
-        var pl = "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";
-        
-        var submitPass = document.getElementById('submitPass');
-        var passEl = document.getElementById('pass');
-        var invalidPassEl = document.getElementById('invalidPass');
-        var trycatcherror = document.getElementById('trycatcherror');
-        var successEl = document.getElementById('success');
-        var contentFrame = document.getElementById('contentFrame');
-        
-        // Sanity checks
+       
 
-        if (pl === "") {
-            submitPass.disabled = true;
-            passEl.disabled = true;
-            alert("This page is meant to be used with the encryption tool. It doesn't work standalone.");
-            return;
-        }
+          <button
+            id="hamburger"
+            aria-label="hamburger"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="bx bx-menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <script src="jscript.js"></script>
+</div>
 
-        if (!isSecureContext) {
-            document.querySelector("#passArea").style.display = "none";
-            document.querySelector("#securecontext").style.display = "block";
-            return;
-        }
 
-        if (!crypto.subtle) {
-            document.querySelector("#passArea").style.display = "none";
-            document.querySelector("#nocrypto").style.display = "block";
-            return;
-        }
-        
-        function str2ab(str) {
-            var ustr = atob(str);
-            var buf = new ArrayBuffer(ustr.length);
-            var bufView = new Uint8Array(buf);
-            for (var i=0, strLen=ustr.length; i < strLen; i++) {
-                bufView[i] = ustr.charCodeAt(i);
-            }
-            return bufView;
-        }
 
-        async function deriveKey(salt, password) {
-            const encoder = new TextEncoder()
-            const baseKey = await crypto.subtle.importKey(
-                'raw',
-                encoder.encode(password),
-                'PBKDF2',
-                false,
-                ['deriveKey'],
-            )
-            return await crypto.subtle.deriveKey(
-                { name: 'PBKDF2', salt, iterations: 100000, hash: 'SHA-256' },
-                baseKey,
-                { name: 'AES-GCM', length: 256 },
-                true,
-                ['decrypt'],
-            )
-        }
-        
-        async function doSubmit(evt) {
-            submitPass.disabled = true;
-            passEl.disabled = true;
 
-            let iv, ciphertext, key;
-            
-            try {
-                var unencodedPl = str2ab(pl);
+<div class="content" style=background-image:url("WallpaperDog-20487262.jpg");>
 
-                const salt = unencodedPl.slice(0, 32)
-                iv = unencodedPl.slice(32, 32 + 16)
-                ciphertext = unencodedPl.slice(32 + 16)
+<!----------------------------------------cards----------------------------------------------------------->
 
-                key = await deriveKey(salt, passEl.value);
-            } catch (e) {
-                trycatcherror.style.display = "inline";
-                console.error(e);
-                return;
-            }
+<!------parallax 1-------->
 
-            try {
-                const decryptedArray = new Uint8Array(
-                    await crypto.subtle.decrypt({ name: 'AES-GCM', iv }, key, ciphertext)
-                );
+<div class="parallax" >
+<div class="site-wrap">
 
-                let decrypted = new TextDecoder().decode(decryptedArray);
 
-                if (decrypted === "") throw "No data returned";
+   <!----------overview-------->
 
-                const basestr = '<base href="." target="_top">';
-                const anchorfixstr = `
-                    <script>
-                        Array.from(document.links).forEach((anchor) => {
-                            const href = anchor.getAttribute("href");
-                            if (href.startsWith("#")) {
-                                anchor.addEventListener("click", function(e) {
-                                    e.preventDefault();
-                                    const targetId = this.getAttribute("href").substring(1);
-                                    const targetEl = document.getElementById(targetId);
-                                    targetEl.scrollIntoView();
-                                });
-                            }
-                        });
-                    <\/script>
-                `;
-                
-                // Set default iframe link targets to _top so all links break out of the iframe
-                if (decrypted.includes("<head>")) decrypted = decrypted.replace("<head>", "<head>" + basestr);
-                else if (decrypted.includes("<!DOCTYPE html>")) decrypted = decrypted.replace("<!DOCTYPE html>", "<!DOCTYPE html>" + basestr);
-                else decrypted = basestr + decrypted;
+  <section data-scroll>
+    <h1 data-splitting><strong>Historical </strong> - <strong> Overview:</strong></h1><br><br><br>
+<p>The surname <strong>Peres Bhatt</strong> is believed to have originated from the <Strong>Brahmin</strong> name Bhatt which is of Indian origin and is derived from the Sanskrit word bhaṭṭa, which means “lord” and is based on bhartr-, which means “lord husband” and is a derivative of bhar-, which means “to bear support.”  </p><br><br><br>
 
-                // Fix fragment links
-                if (decrypted.includes("</body>")) decrypted = decrypted.replace("</body>", anchorfixstr + '</body>');
-                else if (decrypted.includes("</html>")) decrypted = decrypted.replace("</html>", anchorfixstr + '</html>');
-                else decrypted = decrypted + anchorfixstr;
-                
-                contentFrame.srcdoc = decrypted;
-                
-                successEl.style.display = "inline";
-                setTimeout(function() {
-                    dialogWrap.style.display = "none";
-                }, 1000);
-            } catch (e) {
-                invalidPassEl.style.display = "inline";
-                passEl.value = "";
-                submitPass.disabled = false;
-                passEl.disabled = false;
-                console.error(e);
-                return;
-            }
-        }
-        
-        submitPass.onclick = doSubmit;
-        passEl.onkeypress = function(e){
-            if (!e) e = window.event;
-            var keyCode = e.keyCode || e.which;
-            invalidPassEl.style.display = "none";
-            if (keyCode == '13'){
-              // Enter pressed
-              doSubmit();
-              return false;
-            }
-        }
-    })();
-    </script>
-  </body>
+<p> As per the legend, some members of the priestly class in the Konkana community were converted to <strong>Catholicism</strong> by Portuguese missionaries, probably in the 18th century. Their godfathers were the Dukes of Peres, whose surnames were adopted after conversion.</p>
+  </section>
+
+
+ </div>  <!------wrapper----->
+<!-- partial -->
+  <script src='https://unpkg.com/splitting@1.0.0/dist/splitting.js'></script>
+<script src='https://unpkg.com/scroll-out@2.2.3/dist/scroll-out.min.js'></script>
+<script  src="script.js"></script>
+ </div>  <!--- parallax ------->
+
+
+
+<!----------------------------------------#####----------------------------------------------------------->
+
+    <!-------Gtree------------->
+
+  <div style="" id="GTREE">
+  <section data-scroll>
+    <h1 data-splitting><strong>Generation </strong> - <strong> Tree:</strong></h1>
+<p><i>"Let's Discover our Roots"</i><br><br>
+
+    <p>Peres Bhatt Generation Tree is a family tree that displays a hierarchical list of descendants of Peres Bhatt in a tree view format. This family tree helps us to trace our ancestors and understand the relationships.</p><br><br>
+
+   </section>
+  </div>
+
+<iframe src="GTREE.html" height="500" width="100%" title="Generation Tree" scrolling=""></iframe>
+<br>
+	
+<!----------------------------------------#####----------------------------------------------------------->
+
+
+<!------parallax 2-------->
+
+<div class="parallax" >
+<div class="site-wrap">
+
+
+
+    <!--------Goldern memories ------->
+
+  <section  data-scroll id="photos">
+    <h1 data-splitting><strong>Golden </strong> - <strong>Memories:</strong></h1><br>
+<center><img src="https://www.dropbox.com/s/asvp4a4g952ah3p/1623047996193.png?raw=1" alt="Photo Gallery" class="img-fluid" id="photos" width="200" height="200" ></center>
+<p><i>"Life isn't Perfect, but it has perfect Moments & Memories that tells stories of our family"</i><br><br>
+    <p><strong>“Golden Memories”</strong> is an album that captures the memories we’ve made along the way and keeps them alive forever. </p><br><br><br>
+<p>It’s a collection of photos from the Peres Bhatt family that commemorates the moments we’ve shared together. The album is like a treasure trove of golden memories that we can revisit and cherish for years to come.</p><br>
+<p><a href="https://photos.app.goo.gl/8V2FxrUzH4R2tAmA6" target="_blank"><font color="#076c12"><font-weight="normal">View Photo Gallery..</font></a></p> 
+<br>
+
+  </section>
+
+
+   <!-------Sweet Reminisence---------->
+
+  <section  data-scroll id="#Remeno">
+    <h1 data-splitting><strong>Sweet</strong> - <strong>Reminiscence:</strong></h1><br>
+<center><img src="https://www.dropbox.com/s/p1kp0yatk89i2rf/card.png?raw=1" alt="Card Collection" class="img-fluid" width="200" height="200" id="Remeno"></center>
+<p><i>“Nothing is ever really lost as long as we remember it.”</i><br><br>
+    <p><strong>“Sweet Reminiscence” </strong>is a collection of memories that are cherished and treasured as an Album.</p><br><br><br>
+<p> This Album is like a garden of sweet memories that are forever in our hearts and treasured always in our thoughts. Our existence may be ephemeral, but memories last forever. The album commemorates the various events of yesteryear and brings them alive, like a beautiful bouquet of flowers that never fades away.</p><br>
+<p><a href="https://photos.app.goo.gl/YpiX32xSaJ4NHCTT9" target="_blank"><font color="#076c12"><font-weight="normal">View Card Collection..</font></a></p>
+  </section>
+
+
+
+    <!-----calendar---> 
+ 
+<section  data-scroll id="Kalendar">
+  <h1 data-splitting><strong>Event</strong> - <strong>Calendar:</strong></h1><br> <br> <br>
+     
+<iframe src="calendar.html" height="350" width="100%" title="Event Calendar"></iframe> 
+<iframe src="events.html" height="450" width="100%" title="Events" scrolling=""></iframe> 
+ </section>
+
+
+
+    <!------Form------->
+
+  <section data-scroll id="contact">
+    <h1 data-splitting><strong>Contact:</strong></h1><br>
+   <div class="formcarry-container" style="width:100%;">
+
+<p>If you have any Query, Suggestions or just want to say hello, please feel free to message me. <strong>I would be delighted </strong> to hear from you!</p><br>
+<p> Please fill the form below.</p><br><br><br>    
+
+
+<style>
+.fimg {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+  translate: 0px -360px;
+</style>
+
+
+       <div id="box"></div>
+      <script src="form.js"></script>
+  <center><img class="fimg" src="tq.jpg" width="400" height="400" ></center> </div>
+<!---https://www.freeiconspng.com/uploads/thank-you-png-icon-17.png----->
+ </section>
+
+
+
+ </div>  <!------wrapper----->
+<!-- partial -->
+  <script src='https://unpkg.com/splitting@1.0.0/dist/splitting.js'></script>
+<script src='https://unpkg.com/scroll-out@2.2.3/dist/scroll-out.min.js'></script>
+<script  src="script.js"></script>
+ </div>  <!--- parallax ------->
+
+
+<!---------------------------#######----------------------------> 
+
+
+<center><h6> Jonah Aloysius </h6> </center><br>
+</div>   <!--- background Picture---->
+</body>
 </html>

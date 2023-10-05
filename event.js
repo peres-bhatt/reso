@@ -3,9 +3,9 @@
 
 var tb = 'b'; // top or bottom (t or b)
 var headbg = '#fafad2';  // table heading background colour 
-var todaybg = '#99cccc'; // current selected date background colour
-var textclr = '#000000'; // text colour
-var linkclr = '#ff9999'; // link text colour
+var todaybg = '#be4d25'; // current selected date background colour
+var textclr = '#bcc4c7'; // text colour
+var linkclr = '#f40737'; // link text colour
 var noMessage =  '<h3>No events to display for today <br><br><h3>'; // message to display when no entry in array
 
 var dA = new Array(); var x = 0;
