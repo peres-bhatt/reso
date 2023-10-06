@@ -1,27 +1,88 @@
-<!DOCTYPE html>
-<html>
-<head>
 
+<!DOCTYPE html>
+<html lang="en">
+    
+       
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no">
+    <meta name="robots" content="noindex, nofollow">
+
+
+   
+ <title>PERES BHATT G-TREE</title>
+  <link rel="icon" href="https://www.dropbox.com/s/irehp4iclngp3fi/1631674473756.png?raw=1" type ="image/x-icon">
+
+<!----change tab------->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="I-Miss-You-master/jquery.iMissYou.js"></script>
+<script>
+
+// Get current title and icon
+var title = $('title').text();
+var favicon = $('link[rel=icon]').attr('href');
+var newtitle = 'Continue G-Tree';
+
+// Active
+window.addEventListener('focus', resetTitleicon);
+
+// Inactive
+window.addEventListener('blur', changeTitleicon);
+
+// Change page title and icon
+function changeTitleicon(){
+     $("title").text(newtitle); 
+     $('link[rel=icon]').attr('href', 'time.ico');
+}
+
+// Reset the page title and icon
+function resetTitleicon(){
+     $('title').text(title);
+     $('link[rel=icon]').attr('href', favicon);
+}
+</script>
 
 
 
-  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://unpkg.com/splitting@1.0.0/dist/splitting.css'><link rel="stylesheet" href="lstyle.css">
 
+<!----Loader animation------>
+<style type="text/css">/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(https://static.wixstatic.com/media/edfadc_90b02b4709744935a41aac2e192791b6~mv2.gif) center no-repeat #fff;
+  opacity: 100%
+}
+  </style>
+  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script><script>
+  //paste this code under head tag or in a seperate js file.
+  // Wait for window load
+  $(window).on("load", function() {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");;
+  });
+</script>
 
+<!------------------------------------------>
 
-
-  <link rel="stylesheet" href="pstyle.css">
-
-<!------------------------------------------------------------------------------------------------------>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.9/tailwind.min.css"
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.9/tailwind.min.css"
         integrity="sha512-SvJR34InARUfJb279ipE/gjQqX11MDKaly9MNb0vevuWQJmZ23UH7F/65ScEsvLI+myKGbdfA1En82wVSCHQ8A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
@@ -36,332 +97,609 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="lstyle.css"> 
+
+    
+
+
+
+
+
+    <!----------intro background----------->
+
+    <style>
+        .bg-04202f{
+            background: #04202f;
+        }
+        .text-3eb48f{
+            color: #3eb48f;
+        }
+        .about-main-banner-section-one {
+            background-image: url("https://www.dropbox.com/s/4jiep7xc5d8o6pc/1633501508182.jpg?raw=1");
+            background-position-x: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #ffffff;
+            /* height: 50vh; */
+            width: 100%;
+        }
+        
+        .left_border::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 10px;
+            background: #ffd300;
+            z-index: 0;
+        }
+       
+    </style>
+
+
+
+
+
+    
+    <!--------glow-------->
+    
+    <style>
+glow {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+</style>
+
+
+
+
+
+
+<!----------hover anim--------------->
+ <style>
+:root {
+  --mainColor: grey;
+}
+
+
+
+a {
+  color: var(--mainColor);
+  text-decoration: none;
+}
+
+a:hover {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--mainColor);
+}
+
+@supports not(-webkit-text-stroke: 2px red) {
+  a:hover {
+    text-shadow:
+      3px 3px 0 var(--mainColor),
+      -1px -1px 0 var(--mainColor),
+      1px -1px 0 var(--mainColor),
+      -1px 1px 0 var(--mainColor),
+      1px 1px 0 var(--mainColor);
+  }
+}
+</style>
+
+
+<!------scale-------->
+ <style> 
+.zoom {
+    zoom: 1;
+}
+</style>
+
+
+
+<!------Spectrum background------>
+<style type="text/css">
+  .spectrum-background {
+    background:
+        linear-gradient(black, transparent),
+        linear-gradient(to top left, white, transparent),
+        linear-gradient(to top right, white, transparent); 
+      /*  linear-gradient(to top left, lime, transparent),
+        linear-gradient(to top right, blue, transparent);  */
+    background-blend-mode: screen;
+}
+</style>
+
+
+
+
+
+
+<!-----Footer------->
+<style type="text/css">
+  .limg {
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 2rem 2rem;
+ 
+}
+.ltxt {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+}
+</style>
+
+
+
+
+
+
+
+<!-----Jump to top Button------->
+
+<style>
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: #D5D8DC;
+  color: none;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 100%;
+  opacity: 0.3;
+}
+
+#myBtn img{
+ vertical-align: middle;
+}
+
+#myBtn:hover {
+  background-color: #D5D8DC;
+opacity: 0.9;
+}
+</style>
+
+
+
+
+
+
+
+<!-----------------feedback------------
+    <style>
+
+      #box {
+  margin: auto;
+  width: 100%;
+  border: 0px solid black;
+  padding: 0px;
+
+ background-color: solid white;  
+      }
+    </style>      --------->
+
+
+
+
+
+
+
+<!------target new page feedback----->
+
+<script type="text/javascript">
+function submitForm()
+{
+document.form1.target = "myActionWin";
+window.open("","myActionWin","width=500,height=500,toolbar=0");
+document.form1.submit();
+}
+</script>
+
+
+
+<!-----------------------formcarry style-------------->
+
 <link rel="stylesheet" href="formcarry-form.css" />
 
 
 
 
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+<!--------------event calendar table search------------------->
 
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
 }
+</script>
 
-.top-container {
-  background-image: url("WallpaperDog-20487262.jpg");
+<!----------------Alert----------------->
+
+<style>
+.alert {
   padding: 5px;
-  text-align: center;
-align-items: center;
-display: flex;
-  justify-content: center;
-
+  background-color: #f44336;
+  color: white;
+  width:100%
 }
 
-.header {
-  padding: 0px 0px;
-z-index: 10;
-font-weight: bold;
-   color: #204754;
-   font-family: "Nunito", sans-serif;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale;
-   font-size: 2px;
-   position: -webkit-sticky;
-   position: sticky;
-  top: 0;
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 32px;
+  line-height: 30px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-
-
-
+.closebtn:hover {
+  color: black;
+}
 </style>
 
-<!------------>
-   <link rel="stylesheet" href="jjstyle.css" /> 
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
 
-<!-----parallax----->
+
+
+<!--------------------------------->
 
 <style>
-.parallax {
-  /* The image used */
-  background-image: url("p1.jpg"); 
 
-
-  /* Set a specific height */
-  min-height: 500px; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 </style>
 
+</head>
+
+
+<!--------------------------------->
+<!--------------------------------->
+<!--------------------------------->
+<!--------------------------------->
 
 
 
-<!------form--------->
+<body ONLOAD="clockWork"  bgcolor="black" >
+<br><br>
+        <div class="spectrum-background"><br><br> </div>
+<!----------------alert--------->
 
-    <style>
-      body {
-        margin: 20px;
+<div class="myriad fw-light text-base lh-lg mb-1 text-efefef" data-aos="fade-up" data-aos-duration="500" >
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+Please refrain from any Misuse of data and images from this website.
+</div> </div>
 
-      }
 
-      #box {
-        border: 2px solid white;
 
-      }
-    
+<!---------------Jump to top------------->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top" ><img src="https://static.thenounproject.com/png/636009-200.png" alt="buttonpng" border="0" style= " width:50px; height:50px; text-align: center:;  "/></button>
+
+
+
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 </script>
 
 
 
-<!------scale-------->
 
- <style> 
-.zoom {
-    zoom: 0.78;
-}
-</style>
+
+    
+    <!-----------LOADER ANIMATION------->
+    <div class="se-pre-con"></div>
 
 
 
 
-</head>
-<body>
-
-<div class="top-container">
-
-<div id="history">
-    <h1>Peres Bhatt
-      <!-- Scroller Start -->
-      
-      <div class="scroller">
-
-        <span>
-          Ancestral Lineage<br/>
-           Relation Tree<br/>
-         Genealogy</br>
-          Generation Tree<br/> 
-        </span>
-</div>
-      
-      <!-- Scroller End -->
-    </h1>
-
-  </div>
-
-</div>
-
-<div class="header" id="myHeader">
-
-<header id="nav-menu" aria-label="navigation bar" style="background-color:white;">
-
-      <div class="container">
-        <div class="nav-start">
+    <!---------------header----------------->
+ 
+<div class="header" >
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black position-absolute top-0 w-100 z-10">
+ 
+    <div class="container">
+      <a class="navbar-brand" href="index.php">
+        
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
 
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
-          <a class="logo" href="">
-            <img
-              src="https://www.dropbox.com/s/irehp4iclngp3fi/1631674473756.png?raw=1"
-              width="55"
-              height="55"
-              alt="Inc Logo"
-            />
-          </a>
+          <li class="nav-item ">
+            <a class="nav-link text-uppercase titilium text-white d-inline-block pb-0" href="#gtree" >G-Tree</a>
+              <span class="underline_header_anime"></span>
+          </li>
 
 
-          <nav class="menu">
-            <ul class="menu-bar">
-              <li>
+          <li class="nav-item ">
+            <a class="nav-link text-uppercase titilium text-white d-inline-block pb-0" href="#Kalendar">Event-Calender</a>
+              <span class="underline_header_anime"></span>
+              </li>
 
+           <li class="nav-item ">
+            <a class="nav-link text-uppercase titilium text-white d-inline-block pb-0" href="#photos">Golden Memories</a>
+              <span class="underline_header_anime"></span>
+              </li>
 
-                <button
-                  class="nav-link dropdown-btn"
-                  data-dropdown="dropdown1"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  aria-label="browse"
-                >
-                  Browse
-                  <i class="bx bx-chevron-down" aria-hidden="true"></i>
-                </button>
-               <div id="dropdown1" class="dropdown">
-                  <ul role="menu">
+           <li class="nav-item ">
+            <a class="nav-link text-uppercase titilium text-white d-inline-block pb-0" href="#Remeno">Sweet Reminiscence</a>
+              <span class="underline_header_anime"></span>
+              </li>
 
-                    <li role="menuitem">
-                      <a class="dropdown-link" href="#photos">
-                        <img src="https://www.dropbox.com/s/asvp4a4g952ah3p/1623047996193.png?raw=1" class="icon" width="55" height="45" />
-                        <div>
-                          <span class="dropdown-link-title">Golden Memories</span>
-                          <p>A Album of Photo Collections</p>
-                        </div>
-                      </a>
-                    </li>
-
-                    <li role="menuitem">
-                      <a class="dropdown-link" href="#Remeno">
-                        <img src="https://www.dropbox.com/s/p1kp0yatk89i2rf/card.png?raw=1" class="icon" width="55" height="45" />
-                        <div>
-                          <span class="dropdown-link-title">Sweet Reminiscence</span>
-                          <p>The repository for event cards</p>
-                        </div>
-                      </a>
-                    </li>
-
-                    <li role="menuitem">
-                      <a class="dropdown-link" href="#Kalendar">
-                        <img src="cal.png" class="icon" width="55" height="45" />
-                        <div>
-                          <span class="dropdown-link-title">Event Calendar</span>
-                          <p>Today's Events</p>
-                        </div>
-                      </a>
-
-                   
-                  </ul>
-                </div>
+           <li class="nav-item ">
+            <a class="nav-link text-uppercase titilium text-white d-inline-block pb-0" href="#contact">Contact Me</a>
+              <span class="underline_header_anime"></span>
               </li>
 
 
-               
-              <li><a class="nav-link" href="#GTREE">Generation Tree</a></li>
-              <li><a class="nav-link" href="#contact">Contact Me</a></li>
-              <li><a class="nav-link" href="#history">About</a></li>
-            </ul>
-          </nav>
-        </div>
-
-       
-
-          <button
-            id="hamburger"
-            aria-label="hamburger"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            <i class="bx bx-menu" aria-hidden="true"></i>
-          </button>
-        </div>
+               <li class="nav-item active">
+            <a class="nav-link text-uppercase titilium text-white d-inline-block pb-0" href="#history">About</a>
+              <span class="underline_header_anime"></span>
+ 			 </li>
+        </ul>
       </div>
-    </header>
-    <script src="jscript.js"></script>
+    </div>
+  </nav>
+</div>
+
+<!----------Salutation--------------->
+
+    <script type="text/javascript">
+        document.write("<center><font size=+3 style='color: #94a9a6;'>");
+        var day = new Date();
+        var hr = day.getHours();
+        if (hr >= 0 && hr < 12) {
+            document.write("Good Morning!");
+        } else if (hr == 12) {
+            document.write("Good Noon!");
+        } else if (hr >= 12 && hr <= 17) {
+            document.write("Good Afternoon!");
+        } else {
+            document.write("Good Evening!");
+        }
+        document.write("</font></center>");
+    </script>
+
+ <!-----------intro------------------>
+ 
+<div style = "text-align: center; margin:auto;">
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>    <div class="snap-container" >
+        <section>
+            <div class="owl-carousel owl-main-banner-carousel owl-theme">
+                <div class="about-main-banner-section-one">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row vh-100">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 my-auto pt-5 pt-sm-5 pt-md-5 pt-lg-0 pt-xl-0 pt-xxl-0">
+                                        <div>
+                                            <div class="fw-normal oswald text-3eb48f" data-aos="fade-up" data-aos-duration="60">
+                                              <img src="https://www.dropbox.com/s/irehp4iclngp3fi/1631674473756.png?raw=1" alt="Family Tree" style="width:50%; display: block; margin-left: auto; margin-right: auto;" />
+                                            </div>
+<br><br><br>
+                                            <div class="oswald mt-1 fw-light text-3xl lh-sm text-black"  ><glow>Let's Discover our Roots</glow></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </section>
+
+</div>
 </div>
 
 
 
+  <!-----------history------------------->      
+        <section class="bg-black py-5 text-white">
+            <div class="container" id="history">
+                <div class="row">
+                   <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 col-xxl-10">
+                        <h1 class="fs-1 oswald font-normal ps-4 position-relative left_border text-efefef" data-aos="fade-up" data-aos-duration="500" >
+                          Historical Overview:    
+                        </h1>
+                        <p  data-aos="fade-up" data-aos-duration="500"><br>The surname <strong>Peres Bhatt</strong> is believed to have originated from the <Strong>Brahmin</strong> name Bhatt which is of Indian origin and is derived from the Sanskrit word bhaṭṭa, which means “lord” and is based on bhartr-, which means “lord husband” and is a derivative of bhar-, which means “to bear support.”  </p><br>
 
-<div class="content" style=background-image:url("WallpaperDog-20487262.jpg");>
-
-<!----------------------------------------cards----------------------------------------------------------->
-
-<!------parallax 1-------->
-
-<div class="parallax" >
-<div class="site-wrap">
-
-
-   <!----------overview-------->
-
-  <section data-scroll>
-    <h1 data-splitting><strong>Historical </strong> - <strong> Overview:</strong></h1><br><br><br>
-<p>The surname <strong>Peres Bhatt</strong> is believed to have originated from the <Strong>Brahmin</strong> name Bhatt which is of Indian origin and is derived from the Sanskrit word bhaṭṭa, which means “lord” and is based on bhartr-, which means “lord husband” and is a derivative of bhar-, which means “to bear support.”  </p><br><br><br>
-
-<p> As per the legend, some members of the priestly class in the Konkana community were converted to <strong>Catholicism</strong> by Portuguese missionaries, probably in the 18th century. Their godfathers were the Dukes of Peres, whose surnames were adopted after conversion.</p>
-  </section>
-
-
- </div>  <!------wrapper----->
-<!-- partial -->
-  <script src='https://unpkg.com/splitting@1.0.0/dist/splitting.js'></script>
-<script src='https://unpkg.com/scroll-out@2.2.3/dist/scroll-out.min.js'></script>
-<script  src="script.js"></script>
- </div>  <!--- parallax ------->
+<p data-aos="fade-up" data-aos-duration="500"> As per the legend, some members of the priestly class in the Konkana community were converted to <strong>Catholicism</strong> by Portuguese missionaries, probably in the 18th century. Their godfathers were the Dukes of Peres, whose surnames were adopted after conversion.</p>
+                   </div>
+                </div>
+            </div>
+        </section>
 
 
 
-<!----------------------------------------#####----------------------------------------------------------->
 
-    <!-------Gtree------------->
+ <!-----------about gtree------------------>
 
-  <div style="" id="GTREE">
-  <section data-scroll>
-    <h1 data-splitting><strong>Generation </strong> - <strong> Tree:</strong></h1>
-<p><i>"Let's Discover our Roots"</i><br><br>
-
-    <p>Peres Bhatt Generation Tree is a family tree that displays a hierarchical list of descendants of Peres Bhatt in a tree view format. This family tree helps us to trace our ancestors and understand the relationships.</p><br><br>
-
-   </section>
-  </div>
-
-<iframe src="GTREE.html" height="500" width="100%" title="Generation Tree" scrolling=""></iframe>
-<br>
-	
-<!----------------------------------------#####----------------------------------------------------------->
-
-
-<!------parallax 2-------->
-
-<div class="parallax" >
-<div class="site-wrap">
+  <section class="bg-black py-5 text-white" id="gtree">
+            <div class="container">
+                <div class="row">
+                   <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 col-xxl-10">
+                        <h1 class="fs-1 oswald font-normal ps-4 position-relative left_border text-efefef" data-aos="fade-up" data-aos-duration="500" >
+                          Generation Tree:    
+                        </h1>
+                        <p data-aos="fade-up" data-aos-duration="500">
+                          <i> "Let's Discover our Roots" </i> 
+                        </p>
 
 
 
-    <!--------Goldern memories ------->
 
-  <section  data-scroll id="photos">
-    <h1 data-splitting><strong>Golden </strong> - <strong>Memories:</strong></h1><br>
-<center><img src="https://www.dropbox.com/s/asvp4a4g952ah3p/1623047996193.png?raw=1" alt="Photo Gallery" class="img-fluid" id="photos" width="200" height="200" ></center>
-<p><i>"Life isn't Perfect, but it has perfect Moments & Memories that tells stories of our family"</i><br><br>
-    <p><strong>“Golden Memories”</strong> is an album that captures the memories we’ve made along the way and keeps them alive forever. </p><br><br><br>
-<p>It’s a collection of photos from the Peres Bhatt family that commemorates the moments we’ve shared together. The album is like a treasure trove of golden memories that we can revisit and cherish for years to come.</p><br>
-<p><a href="https://photos.app.goo.gl/8V2FxrUzH4R2tAmA6" target="_blank"><font color="#076c12"><font-weight="normal">View Photo Gallery..</font></a></p> 
+
+  
+                        
+  <p   data-aos="fade-up" data-aos-duration="500"><br>This website provides a hierarchical family tree in a tree view format that lists the descendants of Peres Bhatt. It helps us trace our ancestors and understand the relationships between them.</p><br>
+
+  <p class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"></p>     
+
+<br><iframe src="GTREE.html" height="500" width="100%" title="Generation Tree" scrolling=""></iframe>
 <br>
 
-  </section>
-
-
-   <!-------Sweet Reminisence---------->
-
-  <section  data-scroll id="#Remeno">
-    <h1 data-splitting><strong>Sweet</strong> - <strong>Reminiscence:</strong></h1><br>
-<center><img src="https://www.dropbox.com/s/p1kp0yatk89i2rf/card.png?raw=1" alt="Card Collection" class="img-fluid" width="200" height="200" id="Remeno"></center>
-<p><i>“Nothing is ever really lost as long as we remember it.”</i><br><br>
-    <p><strong>“Sweet Reminiscence” </strong>is a collection of memories that are cherished and treasured as an Album.</p><br><br><br>
-<p> This Album is like a garden of sweet memories that are forever in our hearts and treasured always in our thoughts. Our existence may be ephemeral, but memories last forever. The album commemorates the various events of yesteryear and brings them alive, like a beautiful bouquet of flowers that never fades away.</p><br>
-<p><a href="https://photos.app.goo.gl/YpiX32xSaJ4NHCTT9" target="_blank"><font color="#076c12"><font-weight="normal">View Card Collection..</font></a></p>
-  </section>
+              
+                   </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="spectrum-background"><br><br> </div>
 
 
 
-    <!-----calendar---> 
- 
-<section  data-scroll id="Kalendar">
-  <h1 data-splitting><strong>Event</strong> - <strong>Calendar:</strong></h1><br> <br> <br>
+
+
+
      
-<iframe src="calendar.html" height="350" width="100%" title="Event Calendar"></iframe> 
-<iframe src="events.html" height="450" width="100%" title="Events" scrolling=""></iframe> 
- </section>
+ <!-------------Golden Memories------------->       
+          
+ 		<section class="bg-04202f py-5 text-white" id="photos">
+            <div class="container">
+                <div class="row">
+                   <div class="col-11 mx-auto">
+                       <div class="row align-items-center">
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                            <a href="https://photos.app.goo.gl/8V2FxrUzH4R2tAmA6">  <img src="https://www.dropbox.com/s/asvp4a4g952ah3p/1623047996193.png?raw=1" alt="Photo Gallery" class="img-fluid"> </a>
+                         </div>
+
+                         <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                             <h1 class="fw-normal oswald text-3eb48f" data-aos="fade-up" data-aos-duration="500" >Golden Memories</h1>
+                             
+   <div class="myriad fw-light text-base lh-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500">
+                                 <small>
+                                    <i>"Life isn't Perfect, but it has perfect Moments & Memories that tells stories of our family"</i>
+                                 </small>
+                             </div>  <br>
+
+                             <p  data-aos="fade-up" data-aos-duration="500"><strong>“Golden Memories”</strong> is an album that captures the memories we’ve made along the way and keeps them alive forever. </p><br>
+
+<p  data-aos="fade-up" data-aos-duration="500">It’s a collection of photos from the Peres Bhatt family that commemorates the moments we’ve shared together. The album is like a treasure trove of golden memories that we can revisit and cherish for years to come.</p><br>
+<p class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"><a href="https://photos.app.goo.gl/8V2FxrUzH4R2tAmA6" target="_blank"><font color="#9bddff">View Photo Gallery..</font></a></p>
+                             </p>
+                         </div>
+                       </div>
+                   </div>
+                </div>
+            </div> </div>
+        </section> 
+       <div class="spectrum-background"><br><br> </div>
 
 
 
-    <!------Form------->
+  <div id="Remeno"></div>      
+ <!-------Sweet Reminiscence---------->
+ 
+ <section class="bg-04202f py-5 text-white">
+            <div class="container">
+                <div class="row">
+                   <div class="col-11 mx-auto">
+                       <div class="row align-items-center">
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                           <a href="https://photos.app.goo.gl/YpiX32xSaJ4NHCTT9"> <img src="https://www.dropbox.com/s/p1kp0yatk89i2rf/card.png?raw=1" alt="Card Collection" class="img-fluid"></a>
+                         </div>
+                         <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                             <h1 class="fw-normal oswald text-3eb48f" data-aos="fade-up" data-aos-duration="500" >Sweet Reminiscence</h1>
+                             
+   <div class="myriad fw-light text-base lh-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500">
+                                 <small>
+                                    <i>“Nothing is ever really lost as long as we remember it.”</i>
+                                 </small>
+                             </div>   <br>                        
+                             <p  data-aos="fade-up" data-aos-duration="500">
+                               <b>“Sweet Reminiscence”</b> is a collection of memories that are cherished and treasured as an Album.<br> 
+<p  data-aos="fade-up" data-aos-duration="500">This Album is like a garden of sweet memories that are forever in our hearts and treasured always in our thoughts. Our existence may be ephemeral, but memories last forever. The album commemorates the various events of yesteryear and brings them alive, like a beautiful bouquet of flowers that never fades away.<br>
+<p class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"><a href="https://photos.app.goo.gl/YpiX32xSaJ4NHCTT9" target="_blank"><font color="#9bddff">View Card Collection..</font></a>
+                             </p>
+                         </div>
+                       </div>
+                   </div>
+                </div>
+            </div> </div>
+        </section>
 
-  <section data-scroll id="contact">
-    <h1 data-splitting><strong>Contact:</strong></h1><br>
-   <div class="formcarry-container" style="width:100%;">
 
-<p>If you have any Query, Suggestions or just want to say hello, please feel free to message me. <strong>I would be delighted </strong> to hear from you!</p><br>
-<p> Please fill the form below.</p><br><br><br>    
+
+<!----------------EVENT CALENDAR-------------->  
+
+ <div class="spectrum-background"><br><br> </div>
+<section class="" id="Kalendar"> 
+<div style="background-color: black; color:white;padding:10px;"> 
+
+<strong><h3>&nbsp; &nbsp; &nbsp;Event Calendar:</h3></strong></div>
+</section>
+
+<br><br><div>
+<iframe src="calendar.html" height="550" width="100%" title="Event Calendar"></iframe> 
+<div class="spectrum-background"><br><br> </div>
+<div style="background-color:#04202f;">
+<center><iframe src="events.html" height="500" width="100%" title="Events" scrolling=""></iframe></center>   <br> <br> </div>
+<div class="spectrum-background"><br><br> </div></div>
+
+<div id="contact"></div>
+<!------------Feedback------------------>
+<div style="background-color:black;">
+<div class="myriad fw-light text-base lh-lg mb-1 text-efefef" data-aos="fade-up" data-aos-duration="500">
+<div style="background-color:black;color:white;padding:10px;"> 
+<strong><h3>&nbsp; &nbsp; &nbsp; Contact Me:</h3></strong></div>
+<div class="spectrum-background"><br><br> </div>
+
+<!-----
+<div class="formcarry-container" style="width:100%;">
+<p class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> If you have any Query, Suggestions or just want to say hello, please feel free to message me.<br> <strong>I would be delighted to hear from you! </strong></p><br>
+<p> Please fill the form below.</p></div> ---->
 
 
 <style>
@@ -370,30 +708,101 @@ font-weight: bold;
   margin-left: auto;
   margin-right: auto;
   z-index: -1;
-  translate: 0px -360px;
+  translate: 0px -430px;
 </style>
 
 
        <div id="box"></div>
       <script src="form.js"></script>
-  <center><img class="fimg" src="tq.jpg" width="400" height="400" ></center> </div>
+  <center><img class="fimg" src="tq.jpg"  ></center> </div>
 <!---https://www.freeiconspng.com/uploads/thank-you-png-icon-17.png----->
- </section>
+
+   </section>
+     <!---     <div class="spectrum-background"><br><br> </div>    ---->
+<!-------------------Footer---------------------->        
+        <div class="footer">
+    <div class="container py-3">
+        <div class="row m-3">
 
 
 
- </div>  <!------wrapper----->
-<!-- partial -->
-  <script src='https://unpkg.com/splitting@1.0.0/dist/splitting.js'></script>
-<script src='https://unpkg.com/scroll-out@2.2.3/dist/scroll-out.min.js'></script>
-<script  src="script.js"></script>
- </div>  <!--- parallax ------->
+          <div style= "padding: 5px;  width: 100px; display: inline-block; align: center; text-align:center;">
+
+            <img  src="https://www.dropbox.com/s/0fh0grgmvjnmadz/1634186403676.png?raw=1">
+          </div>
+
+            <div style="padding: 5px;  width: 500px; display: inline-block;" class="ltxt col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 my-auto">
+                         
+                <img src="https://www.dropbox.com/s/tlwd2d5459btdws/1631842701606.png?raw=1" align="center" alt="EMANJOH" class="img-fluid  w-25"><br><font color="#A9A9A9"> Jonah Aloysius Peris Bhatt </font>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 my-2">  
+        </div>
+    </div>
+</div>    </div> 
+
+</div>
+<!--------------------------------->
 
 
-<!---------------------------#######----------------------------> 
-
-
-<center><h6> Jonah Aloysius </h6> </center><br>
-</div>   <!--- background Picture---->
 </body>
 </html>
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-776GJ2QQ58"></script>
+<script src="js/index.js"></script>
+
+<script>
+    $('.expert-insights-owl').owlCarousel({
+        center: true,
+        items: 1,
+        loop: false,
+        margin: 10,
+        startPosition: 2,
+        navText: [
+           
+        ],
+        responsive: {
+            600: {
+                items: 4
+            }
+        },
+    });
+    $('.owl-main-banner-carousel').owlCarousel({
+        items: 1,
+        loop: false,
+        margin: 0,
+        loop: false,
+        dots: true,
+        autoplay: false,
+            // slideTransition: 'linear',
+        autoplayTimeout: 6000,
+            // autoplaySpeed: 800,
+            // autoplayHoverPause: true,
+        smartSpeed: 600,
+        // autoPlayTimeout: 6000,
+        // autoplayHoverPause: true
+        // navText: [
+        //     '<div class="owl-carousel-prev-area d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block"><span class="carousel-control-prev-icon" aria-hidden="true"></span></div>',
+        //     '<div class="owl-carousel-next-area d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block"><span class="carousel-control-next-icon" aria-hidden="true"></span></div>'
+        // ],
+    });
+
+
+</script>
+</body>
+
+
+
