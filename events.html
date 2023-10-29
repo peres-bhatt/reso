@@ -7,6 +7,7 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 
@@ -21,6 +22,7 @@ body {
 }
 
 
+
     <!------table---------->
 <style>
 * {
@@ -31,13 +33,12 @@ body {
   background-image: url('https://nebula.wsimg.com/1d2a73bf39dfdc0183e2a4c617ca0258?AccessKeyId=91CBBA8DAEED4655B5DD&disposition=0&alloworigin=1');
   background-position: 10px 10px;
   background-repeat: no-repeat;
-  width: 80%;
+  width: 87%;
   font-size: 16px;
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
   margin-bottom: 12px;
-  background-color: #04202f;
-  color: #ddd;
+  background-color: #ffffe6;
 }
 
 #myTable {
@@ -45,8 +46,8 @@ body {
   width: 100%;
   border: 1px solid #ddd;
   font-size: 18px;
+  
 }
-
 
 #myTable th, #myTable td {
 
@@ -65,7 +66,7 @@ body {
 }
 .grid-container {
 overflow-y: auto;
-height: 500px;
+height: 600px;
 }
 
 </style>
@@ -93,41 +94,12 @@ function myFunction() {
 }
 </script>
 
-
-  <!-------------------scrollable-------------->
-
-<style>
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #04202f; 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888; 
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555; 
-}
-</style>
-
 </head>
-
-
-<body>
-
-<br><br>
+<body style="background-image: url('');">
 
 <div id="myHeeder">
 <center>
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="  &nbsp; &nbsp;  Search for names.." title="Type in a name">
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
 </center>
 </div>
 
