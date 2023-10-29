@@ -130,6 +130,7 @@ dA[x++] = "00001010 <h3>Gloria (Peres Bhatt) Serao's Birthday <br><br>";
 dA[x++] = "00001012 <h3>Dixon Lawrence - Jyothi Maria (D'Souza) D'Mello's Wedding Anniversary (2008) <br><br>";
 dA[x++] = "00001015 <h3>Charles Emmanuel Noronha's Birthday <br><br>";
 dA[x++] = "00001018 <h3>Vineetha D'Mello's Birthday <br> Michael - Susan (D'Cunha) Gojer's Wedding Anniversary <br><br>";
+dA[x++] = "00001020 <h3>Benedicta (Fernandes) Peres Bhatt's Birthday <br><br>";
 dA[x++] = "00001021 <h3>Juliana (D'Cunha) Peres Bhatt's Birthday <br> Flavian (Lobo) Peres Bhatt's Birthday <br> Blessin Jane Peres's Birthday <br> Desmond - Vinitha D'Mello's Wedding Anniversary.<br><br>";
 dA[x++] = "00001022 <h3>Lt. Francis Augustine Rego's Birthday (1891) <br> Lt. Elsie Rose Teresa Noronha's Birthday (1925) <br><br>";
 dA[x++] = "00001025 <h3>Desmond Edward D'Mello's Birthday <br> Anna Joanna (Peres Bhatt) Patrao's Death Anniversary <br><br>";
