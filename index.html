@@ -10,7 +10,7 @@
 
 
     <meta name="robots" content="noindex, nofollow">
-    <meta name="color-scheme" content="light only">
+   <meta name="color-scheme" content="light only">  
  <title>PERES BHATT G-TREE</title>
   <link rel="icon" href="https://www.dropbox.com/s/irehp4iclngp3fi/1631674473756.png?raw=1" type ="image/x-icon">
 
@@ -296,27 +296,118 @@ color: white;
   </style>
 
 <!-----popup----------->
-
-<link rel="stylesheet" href="swc.css">
-
 <style>
 
-div.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  z-index: 10000;
-  Left: 0;
+/* The Modal (background) */
+.modal {
+  display: vivible; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9999; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
   top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
 
 }
 
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  left: 50%;
+  top: 50%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ .pcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.pimg {
+  max-width: 100%;
+  max-height:100%;
+
+}
+
+.ptext {
+  font-size: 5px;
+  padding-left: 20px;
+  
+}
+
+
+/* fade */
+
+         .banimated {
+            
+            background-repeat: no-repeat;
+            -webkit-animation-duration: 20s;
+            animation-duration: 20s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+         }
+         
+         .canimated {
+            
+            background-repeat: no-repeat;
+            -webkit-animation-duration: 15s;
+            animation-duration: 15s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+         }
+         
+         @-webkit-keyframes fade {
+            0% {
+               opacity: 0;
+               -webkit-transform: translateX(0);
+            }
+            100% {
+               opacity: 1;
+               -webkit-transform: translateX(0);
+            }
+         }
+         
+         @keyframes fade {
+            0% {
+               opacity: 0;
+               transform: translateX(0);
+            }
+            100% {
+               opacity: 1;
+               transform: translateX(0);
+            }
+         }
+         
+         .fade {
+            -webkit-animation-name: fade;
+            animation-name: fade;
+         }
+
+
 </style>
-
-<script>
-
-
-
-</script>
 
 
 
@@ -331,23 +422,89 @@ div.sticky {
 
 <!-----popup----------------->
 
-<div class="sticky">
 
-<div id="boxes">
-<div style="top: ; left: ; display: none;" id="dialog" class="window"> 
 
-<div id="san">
-<a href="#" class="close agree"><img src="close-icon.png" width="30" style="float:right; margin-right: -5px; margin-top: -30px; translate: 0px 25px;"></a>
-<img src="san-web-corner.png" width="450">
+<!-- Trigger/Open The Modal -->
+<div id="myBtn"></div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal banimated fade" >
+
+  <!-- Modal content -->
+  <div class="modal-content canimated fade">
+    <span class="close">&times;</span>
+    
+    
+    <script type="text/javascript">
+        document.write("<center><font size=+2  style=' color: #979a9c;'>");
+        var day = new Date();
+        var hr = day.getHours();
+        
+        
+        if (hr >= 0 && hr < 12) {
+            document.write("<h3> Good Morning! <br> Welcome to Peres Bhatt Generation Tree </h3>" ); 
+            
+        } else if (hr == 12) {
+            document.write("<h3> Good Noon! <br> Welcome to Peres Bhatt Generation Tree </h3>" ); 
+        } else if (hr >= 12 && hr <= 15) {
+            document.write(" <h3> Good Afternoon! <br> Welcome to Peres Bhatt Generation Tree </h3>" ); 
+        } else {
+            document.write("<h3> Good Evening! <br> Welcome to Peres Bhatt Generation Tree </h3>" ); 
+        }
+        document.write("</font></center><br>");
+    </script>
+    
+    <br><hr><br>
+     <div class="pcontainer">
+                <div class="pimage">
+                <img src="https://www.freeiconspng.com/uploads/warning-icon-5.png"   width="70" height=""></div>
+                <div class="ptext">
+                <p><h4> Please refrain from any Misuse of data and images from this website.<h4></p>
+      </div>
+    </div>
+    
+   
+  </div>
+
 </div>
 
-</div>
-<div style="width: 2478px; font-size: 32pt; color:white; height: 1202px; display: none; opacity: 0.4;" id="mask"></div>
-</div>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script> 
-<script src="swc.js"></script>
-</div>
+
+<script>
+
+ document.getElementById('myModal').style.visibility = 'hidden';
+ setTimeout(function () {
+                    document.getElementById('myModal').style.visibility = 'visible';
+                }, 12000);
+
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>  
 
 
 
@@ -375,23 +532,7 @@ function myFunction() {
 }
 </script>
 
-<!----------Salutation--------------->
 
-    <script type="text/javascript">
-        document.write("<center><font size=+0 style='color: #bcc9b4;'>");
-        var day = new Date();
-        var hr = day.getHours();
-        if (hr >= 0 && hr < 12) {
-            document.write("Good Morning, Welcome to..");
-        } else if (hr == 12) {
-            document.write("Good Noon, Welcome to..");
-        } else if (hr >= 12 && hr <= 17) {
-            document.write("Good Afternoon, Welcome to..");
-        } else {
-            document.write("Good Evening, Welcome to..");
-        }
-        document.write("</font></center><br>");
-    </script>
 
 
    <!--------top container--------------->
@@ -640,18 +781,29 @@ function myFunction() {
 
 
 <style>
-.fimg {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: -1;
-  translate: 0px -360px;
-</style>
+    .centercontent{
+        position:absolute;
+        max-width: 100%;
+        height: auto;
+        top: 50%;
+        left: 50%;
+       // border:2px solid tomato;
+        transform: translate(-50%, -50%);
+       z-index: -1;
+    }
+    </style>
 
 
-       <div id="box"></div>
+      <div id="box"></div>   
       <script src="form.js"></script>
-  <center><img class="fimg" src="tq.jpg" width="400" height="400" ></center> </div>
+<div class="centercontent">
+<img src="tq.jpg" alt="Tank You" >
+</div>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+ </div>
 <!---https://www.freeiconspng.com/uploads/thank-you-png-icon-17.png----->
  </section>
 
