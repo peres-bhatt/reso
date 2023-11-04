@@ -295,6 +295,8 @@ color: white;
   }
   </style>
 
+
+
 <!-----popup----------->
 <style>
 
@@ -440,15 +442,137 @@ backdrop-filter: blur(6px);
 </style>
 
 
+<!------top banner-------->
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.bow {
+  margin-left:-5px;
+  margin-right:-5px;
+}
+  
+.column1 {
+  float: left;
+  width: 60%;
+  padding-left: 5px;
+
+}
+.column2 {
+  float: left;
+  width: 40%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 0px;
+}
+
+/* Clearfix (clear floats) */
+.bow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 0px solid #2596be;
+}
+
+th, td {
+  text-align: left;
+  padding: 1px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+</style>
+
 
 
 
 </head><!------------------------------------------------------------------------------>
 <body onload="" style="margin-left: 0px; margin-right: 0px;">
 
+
+
+<!---banner------>
+
+<div class="bow">
+  <div class="column1">
+    <table>
+      <tr>
+        <th>
+
+<!------changing quotes-----------
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">    -------->
+
+<div class=" w3-section" style="max-width:600px; padding-left:10px; color:#4d423d; text-allign:left;">
+  <div class="mySlides w3-animate-fading">
+    <h4 style="font-size:14px;"><i>"A family tree can wither if nobody tends its roots."</i></h4>
+  </div>
+
+  <div class="mySlides w3-animate-fading">
+    <h4 style="font-size:14px;"><i>"The roots of a family tree begin with the love of two hearts."</i></h4>
+  </div>
+  
+  
+    <div class="mySlides w3-animate-fading">
+    <h4 style="font-size:14px;"><i>"The family tree is a reminder of the love that grows in our 	&#x1F5A4; "</i></h4>
+  </div>
+
+
+    <div class="mySlides w3-animate-fading">
+    <h4 style="font-size:14px;"><i>"The family is one of nature’s masterpieces"</i></h4>
+  </div>
+  
+  
+    <div class="mySlides w3-animate-fading">
+    <h4 style="font-size:14px;"><i>“The family is a link to our past, bridge to our future.”</i></h4>
+  </div>
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 9000);    
+}
+</script>
+<!--------->
+
+</th>
+      </tr>
+     
+    </table>
+  </div>
+  
+  
+  <div class="column2">
+    <table>
+      <tr>
+        <th>
+
+
+
 <!-----------disclaimer------------------->
 
-<div class="w3-container">
+<div class="w3-container" style="">
 
 <div style="text-align: right; background-color:white;">
 <button onclick="document.getElementById('id01').style.display='block'" class="w3-button" style="background-color: #F60973; color:white;"> Disclaimer</button></div>
@@ -573,6 +697,20 @@ function openCity(evt, cityName) {
   evt.currentTarget.classList.add("w3-light-grey");
 }
 </script>
+
+<!----->
+
+
+</th>
+
+      </tr>
+     
+    </table>
+  </div>
+</div>
+
+
+
 
 
 
@@ -741,14 +879,15 @@ function myFunction() {
 
 
 
-          <a class="logo" href="">
+        <a class="logo" href="">
             <img
               src="https://www.dropbox.com/s/irehp4iclngp3fi/1631674473756.png?raw=1"
               width="55"
               height="55"
               alt="Inc Logo"
             />
-          </a>
+          </a> 
+
 
 
           <nav class="menu">
@@ -844,7 +983,7 @@ function myFunction() {
    <!----------overview-------->
 
   <section data-scroll>
-    <h1 data-splitting><strong>Historical </strong> - <strong> Overview:</strong></h1><br><br><br>
+    <h1 data-splitting style="border-left: 20px solid #079B70; padding-left:20px;"><strong>Historical </strong> - <strong> Overview:</strong></h1><br><br><br>
 <p>The surname <strong>Peres Bhatt</strong> is believed to have originated from the <Strong>Brahmin</strong> name Bhatt which is of Indian origin and is derived from the Sanskrit word bhaṭṭa, which means “lord” and is based on bhartr-, which means “lord husband” and is a derivative of bhar-, which means “to bear support.”  </p><br><br><br>
 
 <p> As per the legend, some members of the priestly class in the Konkana community were converted to <strong>Catholicism</strong> by Portuguese missionaries, probably in the 18th century. Their godfathers were the Dukes of Peres, whose surnames were adopted after conversion.</p>
@@ -866,7 +1005,7 @@ function myFunction() {
 
   <div style="" id="GTREE">
   <section data-scroll>
-    <h1 data-splitting><strong>Generation </strong> - <strong> Tree:</strong></h1>
+    <h1 data-splitting style="border-left: 20px solid #079B70; padding-left:20px;"><strong>Generation </strong> - <strong> Tree:</strong></h1>
 <p><i>"Let's Discover our Roots"</i><br><br>
 
     <p>Peres Bhatt Generation Tree is a family tree that displays a hierarchical list of descendants of Peres Bhatt in a tree view format. This family tree helps us to trace our ancestors and understand the relationships.</p><br><br>
@@ -890,7 +1029,7 @@ function myFunction() {
     <!--------Goldern memories ------->
 
   <section  data-scroll id="photos">
-    <h1 data-splitting><strong>Golden </strong> - <strong>Memories:</strong></h1><br>
+    <h1 data-splitting style="border-left: 20px solid #079B70; padding-left:20px;"><strong>Golden </strong> - <strong>Memories:</strong></h1><br>
 <center><img src="https://www.dropbox.com/s/asvp4a4g952ah3p/1623047996193.png?raw=1" alt="Photo Gallery" class="img-fluid" id="photos" width="200" height="200" ></center>
 <p><i>"Life isn't Perfect, but it has perfect Moments & Memories that tells stories of our family"</i><br><br>
     <p><strong>“Golden Memories”</strong> is an album that captures the memories we’ve made along the way and keeps them alive forever. </p><br><br><br>
@@ -904,7 +1043,7 @@ function myFunction() {
    <!-------Sweet Reminisence---------->
 
   <section  data-scroll id="#Remeno">
-    <h1 data-splitting><strong>Sweet</strong> - <strong>Reminiscence:</strong></h1><br>
+    <h1 data-splitting style="border-left: 20px solid #079B70; padding-left:20px;"><strong>Sweet</strong> - <strong>Reminiscence:</strong></h1><br>
 <center><img src="https://www.dropbox.com/s/p1kp0yatk89i2rf/card.png?raw=1" alt="Card Collection" class="img-fluid" width="200" height="200" id="Remeno"></center>
 <p><i>“Nothing is ever really lost as long as we remember it.”</i><br><br>
     <p><strong>“Sweet Reminiscence” </strong>is a collection of memories that are cherished and treasured as an Album.</p><br><br><br>
@@ -926,9 +1065,10 @@ function myFunction() {
     <!-----calendar---> 
  
 <section  data-scroll id="Kalendar">
-  <h1 data-splitting><strong>Event</strong> - <strong>Calendar:</strong></h1><br> 
+  <h1 data-splitting style="border-left: 20px solid #079B70; padding-left:20px;"><strong> Event</strong> - <strong>Calendar:</strong></h1><br> 
      
-<iframe src="calendar.html" height="450" width="100%" title="Event Calendar" scrolling="no"></iframe> 
+<iframe src="calendar.html" height="450" width="100%" title="Event Calendar" scrolling="no"></iframe> <br>
+
 <iframe src="events.html" height="550" width="100%" title="Events"  overflow-x: hidden; ></iframe> 
  </section>
 
@@ -943,7 +1083,7 @@ function myFunction() {
     <!------Form------->
 
   <section data-scroll id="contact">
-    <h1 data-splitting><strong>Contact:</strong></h1><br>
+    <h1 data-splitting style="border-left: 20px solid #079B70; padding-left:20px;"><strong>Contact:</strong></h1><br>
    <div class="formcarry-container" style="width:100%;">
 
 <p>If you have any Query, Suggestions or just want to say hello, please feel free to message me. <strong>I would be delighted </strong> to hear from you!</p><br>
@@ -978,20 +1118,21 @@ function myFunction() {
 
 
  </div>  <!------wrapper----->
+
+<!--- footer ---><center>
+<div style="padding:10px; background-color:black; z-index:-1; opacity:0.8;">
+
+<img src="https://www.dropbox.com/scl/fi/np7vaj58tituw32ti6vxp/1699030897934.png?rlkey=xk354zng72ktreuk81l0x4zoh&raw=1" alt="EMANJOH" width="15%" >
+</div></center><!--- footer --->
+
 <!-- partial -->
   <script src='https://unpkg.com/splitting@1.0.0/dist/splitting.js'></script>
 <script src='https://unpkg.com/scroll-out@2.2.3/dist/scroll-out.min.js'></script>
 <script  src="script.js"></script>
+
  </div>  <!--- parallax ------->
 
-
-<!---------------------------#######----------------------------> 
-
-
-    <center>
-     <div style="padding:6px;">  <img src="https://www.dropbox.com/scl/fi/np7vaj58tituw32ti6vxp/1699030897934.png?rlkey=xk354zng72ktreuk81l0x4zoh&raw=1" alt="EMANJOH" width="10%" ></div>
-      
-  </center>   
+  
 
 
 </div>   <!--- background Picture---->

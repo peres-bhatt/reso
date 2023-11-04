@@ -2,11 +2,11 @@
 // copyright Stephen Chapman, 10th June 2006, 22nd January 2010
 
 var tb = 'b'; // top or bottom (t or b)
-var headbg = '#fafad2';  // table heading background colour 
-var todaybg = '#be4d25'; // current selected date background colour
+var headbg = '#186e3d';  // table heading background colour 
+var todaybg = '#186e3d'; // current selected date background colour
 var textclr = '#ffffff'; // text colour
-var linkclr = '#f40737'; // link text colour
-var noMessage =  '<h3>No events to display for today <br><br><h3>'; // message to display when no entry in array
+var linkclr = 'orange'; // link text colour
+var noMessage =  '<h1>No events to display for today <br><br></h1>'; // message to display when no entry in array
 
 var dA = new Array(); var x = 0;
 
