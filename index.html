@@ -108,27 +108,7 @@ if it's not present, don't show loader */
 </script>
 
 
-<!--------------scroll indicator------------------->
 
-<style>
-.progress-container {
-  width: 100%;
-  height: 5px;
-  background: white;
-
-  position: fixed;
-  top: 0;
-  z-index: 11;
-// transform: translate(0px,95px);
-}
-
-.progress-bar {
-  height: 5px;
-  background: #04AA6D;
-  width: 0%;
-
-}
-</style>
 
 
 
@@ -197,14 +177,14 @@ z-index: 9;
 z-index: 2;
 font-weight: bold;
  //  color: #204754;
-color: white;
+ color: #ccc;
    font-family: "Nunito", sans-serif;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
    font-size: 2px;
    position: -webkit-sticky;
    position: sticky;
-  top: 0;
+  top: 0px;
 }
 
 
@@ -268,32 +248,6 @@ color: white;
 </style>
 
 
-<!-----footer------->
-
-   <style>
-  .footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-  color: black;
-//  background: white;
-//  opacity: 0.4;
-  bottom: 0;
-
-  }
-  
-  .fimg {
-    max-width: 25%;
-    max-height:15%;
-    float: left;
-  }
-  
-  .ftext {
-    font-size: 20px;
-    float: left;
-  }
-  </style>
 
 
 
@@ -494,6 +448,31 @@ tr:nth-child(even) {
 </style>
 
 
+<!--------------scroll indicator------------------->
+
+<style>
+.progress-container {
+  width: 100%;
+  height: 5px;
+  background: #ccc;
+
+ // position: fixed;
+    top: 90px;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1;
+// transform: translate(0px,95px);
+}
+
+.progress-bar {
+  height: 5px;
+  background: #04AA6D;
+  width: 0%;
+
+}
+</style>
+
+
 
 
 </head><!------------------------------------------------------------------------------>
@@ -523,7 +502,7 @@ tr:nth-child(even) {
   
   
     <div class="mySlides w3-animate-fading">
-    <h4 style="font-size:14px;"><i>"The family tree is a reminder of the love that grows in our 	&#x1F5A4; "</i></h4>
+    <h4 style="font-size:14px;"><i>"The family tree is a reminder of the love that grows in our heart"</i></h4>
   </div>
 
 
@@ -820,25 +799,6 @@ window.onclick = function(event) {
 
 
 
-    <!--------------Scroll Indicator-------------->
-
-
-   <div class="progress-container">
-    <div class="progress-bar" id="myBar"></div>
-  </div>
-
-<script>
-// When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction()};
-
-function myFunction() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar").style.width = scrolled + "%";
-}
-</script>
-
 
 
 
@@ -901,7 +861,7 @@ function myFunction() {
                   aria-haspopup="true"
                   aria-expanded="false"
                   aria-label="browse"
-		style="color: white;"
+		style="color: #ccc;"
                 >
                   Browse
                   <i class="bx bx-chevron-down" aria-hidden="true"></i>
@@ -967,6 +927,32 @@ function myFunction() {
     </header>
     <script src="jscript.js"></script>
 </div>
+
+
+
+    <!--------------Scroll Indicator-------------->
+
+
+   <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+
+
+
+<!------------->
 
 
 
@@ -1119,11 +1105,28 @@ function myFunction() {
 
  </div>  <!------wrapper----->
 
-<!--- footer ---><center>
-<div style="padding:10px; background-color:black; z-index:-1; opacity:0.8;">
 
-<img src="https://www.dropbox.com/scl/fi/np7vaj58tituw32ti6vxp/1699030897934.png?rlkey=xk354zng72ktreuk81l0x4zoh&raw=1" alt="EMANJOH" width="15%" >
-</div></center><!--- footer --->
+
+
+
+<!---------- footer -------------------->
+<center>
+<div style="padding:10px; background-color:black; z-index:-1; opacity:0.8; cursor: pointer;">
+
+<p onclick="myFooter()">
+<img src="https://www.dropbox.com/scl/fi/np7vaj58tituw32ti6vxp/1699030897934.png?rlkey=xk354zng72ktreuk81l0x4zoh&raw=1" alt="EMANJOH" width="15%" ></p>
+</div></center>
+
+
+<script>
+function myFooter() {
+  var newWin = window.open("https://peres-bhatt.github.io/jonah/", '', 'width=500,height=400');
+}
+</script><!--- footer --->
+
+
+
+
 
 <!-- partial -->
   <script src='https://unpkg.com/splitting@1.0.0/dist/splitting.js'></script>
