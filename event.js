@@ -6,7 +6,7 @@ var headbg = '#186e3d';  // table heading background colour
 var todaybg = '#186e3d'; // current selected date background colour
 var textclr = '#ffffff'; // text colour
 var linkclr = 'orange'; // link text colour
-var noMessage =  '<h1>No events to display for today <br><br></h1>'; // message to display when no entry in array
+var noMessage =  '<h2>No events to display for today <br><br></h2>'; // message to display when no entry in array
 
 var dA = new Array(); var x = 0;
 
