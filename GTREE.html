@@ -683,8 +683,8 @@ if it's not present, don't show loader */
 
             .tools-panel .breadcrumbs {
                 color: #fff;
-                padding: 13px 0 0 40px;
-                margin-left: 300px;
+                padding: 4px 0 0 40px;
+                margin-left: 263px;
                 font-size: 14px
             }
 
@@ -74171,10 +74171,50 @@ if it's not present, don't show loader */
                 }
             }
         </style>
+
+
+<!----------Tooltip------------>
+
+        <style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
+
     </head>
-
-
-
 
 
     <body>
@@ -74190,23 +74230,25 @@ if it's not present, don't show loader */
 
         <!---------------header----------------->
         <header class="header">
-            <div class=" w3-hide-medium" style="margin-left: 20px;">
-                <p>
-                    For better experience switch to Desktop mode <br>or rotate your device.
-                </p>
+            <div class=" w3-hide-medium" style="padding: 5px;">
+            <p> For better experience switch to landscape. <br> (change device screen orientation) <br> </p>
             </div>
+
+
+
+
             <div class=" w3-hide-small ">
                 <div style="display: inline-block; padding:20px;">Hierarchical legend: &nbsp;&nbsp;&nbsp;</div>
-                <div class="circle1">1</div>
-                <div class="circle2">2</div>
-                <div class="circle3">3</div>
-                <div class="circle4">4</div>
-                <div class="circle5">5</div>
-                <div class="circle6">6</div>
-                <div class="circle7">7</div>
-                <div class="circle8">8</div>
-                <div class="circle9">9</div>
-                <div class="circle10">10</div>
+                <div class="circle1 tooltip">1 <span class="tooltiptext">Generation 1</span></div>
+                <div class="circle2 tooltip">2 <span class="tooltiptext">Generation 2</span></div>
+                <div class="circle3 tooltip">3 <span class="tooltiptext">Generation 3</span></div>
+                <div class="circle4 tooltip">4 <span class="tooltiptext">Generation 4</span></div>
+                <div class="circle5 tooltip">5 <span class="tooltiptext">Generation 5</span></div>
+                <div class="circle6 tooltip">6 <span class="tooltiptext">Generation 6</span></div>
+                <div class="circle7 tooltip">7 <span class="tooltiptext">Generation 7</span></div>
+                <div class="circle8 tooltip">8 <span class="tooltiptext">Generation 8</span></div>
+                <div class="circle9 tooltip">9 <span class="tooltiptext">Generation 9</span></div>
+                <div class="circle10 tooltip">10 <span class="tooltiptext">Generation 10</span></div>
             </div>
         </header>
 
@@ -74287,7 +74329,7 @@ if it's not present, don't show loader */
 
 
 
-        <div class="tools-panel">
+       <div class="tools-panel">
             <div class="search">
                 <div class="left-menu-filter dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-texteditor-empty dx-show-clear-button" style="width: 100%; height: 50px;">
                     <div class="dx-texteditor-container">
@@ -74296,14 +74338,21 @@ if it's not present, don't show loader */
                         <div class="dx-texteditor-buttons-container">
                             <span class="dx-clear-button-area">
                                 <span class="dx-icon dx-icon-clear"></span>
-                            </span>
+                            </span> 
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="breadcrumbs"></div>
-        </div>
-</div>
+             </div>
+
+            <div class="breadcrumbs">
+
+           </div>
+    </div>
+
+
+
+
+
 <div class="body">
     <div class="body-container">
         <div class="widgets-menu-container" style="padding-bottom: 100%">
