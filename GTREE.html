@@ -74214,6 +74214,31 @@ if it's not present, don't show loader */
 }
 </style>
 
+
+<!-----marquee-------->
+
+    <style>
+ 
+        /* Makes the animation pause on hover */
+        .moving-text:hover{
+            animation-play-state: paused;
+        }
+ 
+        /* The animation */
+        @keyframes marquee{
+            0%{transform: translateX(50%);}
+            100%{transform: translateX(-100%);}
+        }
+ 
+        /* media query to enable animation for only those who want it */
+        @media (prefers-reduced-motion: no-preference) {
+            .moving-text{
+                animation: marquee 15s linear infinite;
+            }
+        }
+    </style>
+
+
     </head>
 
 
@@ -74230,14 +74255,14 @@ if it's not present, don't show loader */
 
         <!---------------header----------------->
         <header class="header">
-            <div class=" w3-hide-medium" style="padding: 5px;">
-            <p> For better experience switch to landscape. <br> (change device screen orientation) <br> </p>
+            <div class=" w3-hide-medium moving-text" style="padding: 5px;">
+            <p> <br> &nbsp; &nbsp; For a better experience switch to landscape (Desktop) mode.  (change your device screen orientation) &nbsp; &nbsp; <br><br> </p>
             </div>
 
 
 
 
-            <div class=" w3-hide-small ">
+            <div class=" w3-hide-small " style="scale:0.7;">
                 <div style="display: inline-block; padding:20px;">Hierarchical legend: &nbsp;&nbsp;&nbsp;</div>
                 <div class="circle1 tooltip">1 <span class="tooltiptext">Generation 1</span></div>
                 <div class="circle2 tooltip">2 <span class="tooltiptext">Generation 2</span></div>

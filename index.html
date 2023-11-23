@@ -522,9 +522,9 @@ tr:nth-child(even) {
    .closeTREE:focus {color: #999; text-decoration: none; cursor: pointer;}
    .cursor {cursor: pointer;}
    img.hover-shadow {transition: 0.3s;}
-   .hover-shadow:hover {box-shadow: 0 4px 8px 0 rgba(11, 127, 171, 0.2), 0 6px 20px 0 rgba(11, 127, 171, 0.19);}
+   .hover-shadow:hover {box-shadow: 0 4px 12px 0 rgba(11, 127, 171, 0.2), 0 6px 20px 0 rgba(11, 127, 171, 0.19); border-radius: 50%;}
 
-  .itree {  }
+  
 
 
    </style>
@@ -564,6 +564,38 @@ html {
   display: table;
 }
 </style>
+
+
+
+<!----------------Event calendar------------>     
+    <style>
+    #calDate {
+    background-color: white;
+    color: black;
+    word-spacing: 2px;
+    text-align:center;
+    }
+
+    #cal {
+        background-color: #079B70;
+    }
+
+   td {
+  text-align: center;
+   }
+    
+    tr{
+   color:green;
+   font-weight:bold;
+   align: center;
+    }
+
+   tr a{
+   color:white;
+    align: center;
+}
+    </style>
+
 
 
 </head><!------------------------------------------------------------------------------>
@@ -919,6 +951,8 @@ window.onclick = function(event) {
 </div>
 
 
+
+
 <!------header--------->
 
 <div class="header" id="myHeader">
@@ -1082,11 +1116,11 @@ function myFunction() {
  </section>
 
 <div id="tree"></div>
-                <div class="" style="float:right; transform: translate(0px,0px); color:white; font-size:10px;"><img src="pngtree.png" width="35" height="35" onclick="openGTREE();" class="hover-shadow cursor">Enlarge
+                <div class="" style="float:Left; transform: translate(30px,30px); color:gray; font-size:10px;"><img src="https://www.svgrepo.com/show/10746/resize.svg" width="35" height="35" onclick="openEVENT();" class="hover-shadow cursor">Expand
                   </div>  
                 <div id="myTree" class="GTREE" style="z-index:50;"><span class="closeTREE cursor" onclick="closeTree()">&times;</span>
                     <div class="inside-GTREE">
-                      <div class="itree"><iframe src="GTREE.html" title="Generation Tree" height="500" width="100%" scrolling="" ></iframe>
+                      <div class=""><iframe src="GTREE.html" title="Generation Tree" height="500" width="100%" scrolling="" ></iframe>
                       </div>
                     </div>
                 </div>  
@@ -1134,18 +1168,266 @@ function myFunction() {
 
 
 
-    <!-----calendar---> 
- <!--- <section  data-scroll  style="background-color:#faf8cf; "> --->
-<iframe src="events.html" height="550" width="100%" title="Events"  overflow-x: hidden; ></iframe> 
-<!--- <div style="background-color:white;"><div>  --->
+    <!-----Event calendar---> 
+
 
 
  <div id="Kalendar"></div>
 <section  data-scroll ">
-  <h1 data-splitting style="border-left: 20px solid #079B70; padding-left:20px; color:white;"><strong> Event</strong> - <strong>Calendar:</strong></h1><br> 
 
-<iframe src="calendar.html" height="450" width="100%" title="Event Calendar" scrolling="no"></iframe> <br>    </section>
+  <h1 data-splitting style="border-left: 20px solid #079B70; padding-left:20px;"><strong> Event</strong> - <strong>Calendar:</strong></h1><br> 
+<!--- <iframe src="calendar.html" height="450" width="100%" title="Event Calendar" scrolling="no"></iframe> ----->   
 
+    <!----calendar---->
+  <br>
+  <div style="background-color:#079B70;">
+      <br>
+  <center> <div id="calendar" style="-webkit-box-shadow: 0px 29px 26px 0px rgba(184,180,184,1);
+-moz-box-shadow: 0px 29px 26px 0px rgba(184,180,184,1);
+box-shadow: 0px 29px 26px 0px rgba(184,180,184,1); "></div>
+</div></center>
+
+
+    
+    <script type="text/javascript" src="calender.js"></script>
+    
+
+
+    <script>
+        // permission is granted to use this javascript provided that the below code is not altered
+        var pageLoaded = 0;
+        window.onload = function() {
+            pageLoaded = 1;
+        };
+
+        function loaded(i, f) {
+            if (document.getElementById && document.getElementById(i) != null) f();
+            else if (!pageLoaded) setTimeout("loaded('" + i + "'," + f + ')', 100);
+        }
+
+        function monthlength(month, year) {
+            var dd = new Date(year, month, 0);
+            return dd.getDate();
+        }
+        var moy = [
+            '<h1>January</h>',
+            '<h1>February</h>',
+            '<h1>March</h>',
+            '<h1>April</h>',
+            '<h1>May</h>',
+            '<h1>June</h>',
+            '<h1>July</h>',
+            '<h1>August</h>',
+            '<h1>September</h>',
+            '<h1>October</h>',
+            '<h1>November</h>',
+            '<h1>December</h>',
+        ];
+        var today = new Date();
+        var selDate =
+            today.getFullYear() + getmmdd(today.getMonth() + 1, today.getDate());
+
+        function dispCal(yy, mm) {
+            if (mm < 0 || mm > 12) {
+                alert('month must be between 1 and 12');
+                return false;
+            }
+            if (yy != 0 && (yy < 1901 || yy > 2100)) {
+                alert('year must be after 1900 and before 2101');
+                return false;
+            }
+            var dow = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+            var calendar = new Date();
+            var today = calendar.getDate();
+            calendar.setDate(1);
+            if (yy > 1900) calendar.setFullYear(yy);
+            if (mm > 0) calendar.setMonth(mm - 1);
+            var yy = (year = calendar.getFullYear());
+            var month = calendar.getMonth();
+            calendar.setDate(today);
+            var weekday = calendar.getDay();
+            var daysInMonth = monthlength(month + 1, year);
+            var hilite_start =
+                '<td width="130" style="background: yellow;' +
+                todaybg +
+                '" align="center"><b>';
+            var td_start = '<td width="130" align="center" >';
+            var cal =
+                '<div id="cal"><div style=" border:2pt solid #cccccc;width:80%; background:white;  "><table border="1" cellspacing="5" cellpadding="2le="background:' +
+                headbg +
+                '" align="center"><b>' +
+                moy[month] +
+                ' ' +
+                year +
+                '</b></td></tr><tr>';
+            for (dex = 0; dex < 7; dex++) {
+                cal += td_start + dow[dex] + '</td>';
+            }
+            cal += '</tr><tr>';
+            var day2 = today;
+            for (dex = today; dex > 6; dex -= 7) day2 = dex;
+            weekday -= day2 - 1;
+            while (weekday < 0) weekday += 7;
+            for (dex = 0; dex < weekday; dex++) cal += td_start + ' </td>';
+            for (dex = 1; dex <= daysInMonth; dex++) {
+                if (weekday == 7) {
+                    cal += '</tr><tr>';
+                    weekday = 0;
+                }
+                if (selDate == year + getmmdd(month + 1, dex))
+                    cal +=
+                    hilite_start +
+                    '<span ' +
+                    clickDate(dex, month, year) +
+                    '>' +
+                    dex +
+                    '</span></b></td>';
+                else
+                    cal +=
+                    td_start +
+                    '<span ' +
+                    clickDate(dex, month, year) +
+                    '>' +
+                    dex +
+                    '</span></td>';
+                weekday += 1;
+            }
+            for (dex = weekday; dex < 7; dex++) cal += td_start + ' </td>';
+            cal += '</tr></table></div>';
+            if (document.getElementById) {
+                var mmb = month;
+                mm = month + 1;
+                var yya = (yyb = yy);
+                if (mmb < 1) {
+                    mmb += 12;
+                    yyb--;
+                }
+                var mma = month + 2;
+                if (mma > 12) {
+                    mma -= 12;
+                    yya++;
+                }
+                var yb = yy - 1;
+                var ya = yy + 1;
+                cal +=
+                    '<table border="0" cellspacing="2" cellpadding="2" width="120" ><tr><td><a href="#" onclick="if (cala = dispCal(' +
+                    yb +
+                    ',' +
+                    mm +
+                    ')) {document.getElementById(\'cal\').innerHTML = cala; return false;}"><<</a></td><td><a href="#" onclick="if (cala = dispCal(' +
+                    yyb +
+                    ',' +
+                    mmb +
+                    ')) {document.getElementById(\'cal\').innerHTML = cala; return false;}"><</a></td><td align="right"><a href="#" onclick="if (cala = dispCal(' +
+                    yya +
+                    ',' +
+                    mma +
+                    ')) {document.getElementById(\'cal\').innerHTML = cala; return false;}">></a></td><td align="right"><a href="#" onclick="if (cala = dispCal(' +
+                    ya +
+                    ',' +
+                    mm +
+                    ")) {document.getElementById('cal').innerHTML = cala; return false;}\">>></a></td></tr></table>";
+            } else {
+                cal += '<div> </div>';
+            }
+            cal += '</div>';
+            return cal;
+        }
+
+        function start() {
+            var x =
+                '<div id="calDate" style="border:1pt solid #cccccc;width:100%;"></div>';
+            var y = '';
+            if (tb == 't') y = x + dispCal(0, 0);
+            else y = dispCal(0, 0) + x;
+            document.getElementById('calendar').innerHTML = y;
+            ev();
+        }
+
+        loaded('calendar', start);
+
+        function clickDate(day, month, year) {
+            var ct = nextDate(year + getmmdd(month + 1, day));
+            if (ct == '') ct = nextDate('0000' + getmmdd(month + 1, day));
+            if (ct == '') return 'style="color:' + textclr + '"';
+            else
+                return (
+                    'style="cursor:pointer;color:' +
+                    linkclr +
+                    '" onclick="selDate = ' +
+                    year +
+                    getmmdd(month + 1, day) +
+                    '; isDate(' +
+                    day +
+                    ',' +
+                    month +
+                    ',' +
+                    year +
+                    ');return false;"'
+                );
+        }
+
+        function isDate(dayVal, monthVal, yearVal) {
+            var ct = nextDate(yearVal + getmmdd(monthVal + 1, dayVal));
+            if (ct == '') ct = nextDate('0000' + getmmdd(monthVal + 1, dayVal));
+            if (ct == '') ct = noMessage;
+            document.getElementById('calDate').innerHTML = '<br />' + ct + '<br />';
+            return false;
+        }
+
+        function nextDate(yymmdd) {
+            var x = dA.length;
+            for (var i = 0; i < x; i++) {
+                if (dA[i].substr(0, 8) == yymmdd) return dA[i].substr(8);
+            }
+            return '';
+        }
+
+        function getmmdd(mm, dd) {
+            return (mm > 9 ? '' + mm : '0' + mm) + (dd > 9 ? dd : '0' + dd);
+        }
+
+        function ev() {
+            var ct = nextDate(selDate);
+            var ct = nextDate(selDate);
+            if (ct == '') ct = nextDate('0000' + selDate.substr(4));
+            if (ct == '') ct = noMessage;
+            document.getElementById('calDate').innerHTML =  ct;
+        }
+    </script>
+
+</section>
+
+
+
+    <!------events------->
+
+
+
+                <div class="" style="float:right; transform: translate(-30px,55px); color:gray; font-size:10px;"><img src="https://www.svgrepo.com/show/10746/resize.svg" width="35" height="35" onclick="openEVENT();" class="hover-shadow cursor">Expand
+                  </div>  
+                <div id="myEVE" class="GTREE" style="z-index:51;"><span class="closeTREE cursor" onclick="closeEVENT()">&times;</span>
+                    <div class="inside-GTREE">
+                      <div class=""><iframe src="life-events.html" title="Life events" height="500" width="100%" scrolling="" ></iframe>
+                      </div>
+                    </div>
+                </div>
+<div class="pb" style="color:white;"> Life Events </div>
+       <script>
+       function openEVENT() {
+       document.getElementById("myEVE").style.display = "block";}
+       function closeEVENT() {
+       document.getElementById("myEVE").style.display = "none";}
+       </script>
+
+
+ <!--- <section  data-scroll  style="background-color:#faf8cf; "> --->
+<iframe src="life-events.html" height="550" width="100%" title="Events"  overflow-x: hidden; ></iframe> 
+
+
+
+
+<!---rain--->
 <center>
 <div class="blck">
   <div class="*prts">
