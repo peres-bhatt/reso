@@ -142,41 +142,6 @@ if it's not present, don't show loader */
 </script>
 
 
-
-
-
-
-
-
-<!-----right click disabled----
-
-<script>
-document.addEventListener('contextmenu', function(e){
-e.preventDefault();
-});
-
-document.onkeydown = function(e) {
-  if(event.keyCode == 123) {
-     return false;
-  }
-  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-     return false;
-  }
-  if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-     return false;
-  }
-  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-     return false;
-  }
-  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-     return false;
-  }
-    if(e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) {
-     return false;
-  }
-}
-</script>   --->
-
 <!------------>
 
 
@@ -500,7 +465,8 @@ tr:nth-child(even) {
 
 .progress-bar {
   height: 5px;
-  background: #04AA6D;
+//  background: #04AA6D; 
+  background: #7bcf7d; 
   width: 0%;
 
 }
@@ -577,7 +543,7 @@ html {
     }
 
     #cal {
-        background-color: #079B70;
+        background-color: #ddd;
     }
 
    td {
@@ -591,14 +557,44 @@ html {
     }
 
    tr a{
-   color:white;
+    color:white;
     align: center;
+    font-weight:bold;
 }
     </style>
 
 
+<!----hover underline animation----->
 
-</head><!------------------------------------------------------------------------------>
+<style>
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #E5E4E2;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #a9e37c;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+</style>
+
+
+
+</head><!------------------------------------------------------------------------------------------------------------------------------>
 <body onload="" style="margin-left: 0px; margin-right: 0px;">
 
 
@@ -838,7 +834,7 @@ function openCity(evt, cityName) {
 
 
   <!-- Modal content -->
-  <div class="modal-content canimated fade">
+  <div class="modal-content canimated fade" style="scale:0.5">
     <span class="close">&times;</span>
     
 
@@ -995,7 +991,7 @@ window.onclick = function(event) {
                   <ul role="menu">
 
                     <li role="menuitem">
-                      <a class="dropdown-link" href="#photos">
+                      <a class="dropdown-link " href="#photos">
                         <img src="https://www.dropbox.com/s/asvp4a4g952ah3p/1623047996193.png?raw=1" class="icon" width="55" height="45" />
                         <div>
                           <span class="dropdown-link-title">Golden Memories</span>
@@ -1005,7 +1001,7 @@ window.onclick = function(event) {
                     </li>
 
                     <li role="menuitem">
-                      <a class="dropdown-link" href="#Remeno">
+                      <a class="dropdown-link " href="#Remeno">
                         <img src="https://www.dropbox.com/s/p1kp0yatk89i2rf/card.png?raw=1" class="icon" width="55" height="45" />
                         <div>
                           <span class="dropdown-link-title">Sweet Reminiscence</span>
@@ -1015,7 +1011,7 @@ window.onclick = function(event) {
                     </li>
 
                     <li role="menuitem">
-                      <a class="dropdown-link" href="#Kalendar">
+                      <a class="dropdown-link " href="#Kalendar">
                         <img src="cal.png" class="icon" width="55" height="45" />
                         <div>
                           <span class="dropdown-link-title">Event Calendar</span>
@@ -1030,9 +1026,9 @@ window.onclick = function(event) {
 
 
                
-              <li><a onclick="toggleHamburger()" class="nav-link" href="#GTREE">Generation Tree</a></li>
-              <li><a onclick="toggleHamburger()" class="nav-link" href="#contact">Contact Me</a></li>
-              <li><a onclick="toggleHamburger()" class="nav-link" href="#history">About</a></li>
+              <li><a onclick="toggleHamburger()" class="nav-link hover-underline-animation" href="#GTREE">Generation Tree</a></li>
+              <li><a onclick="toggleHamburger()" class="nav-link hover-underline-animation" href="#contact">Contact Me</a></li>
+              <li><a onclick="toggleHamburger()" class="nav-link hover-underline-animation" href="#history">About</a></li>
             </ul>
           </nav>
         </div>
@@ -1094,7 +1090,7 @@ function myFunction() {
    <!----------overview-------->
      <div id="history"></div>
      <section data-scroll>
-    <h1 data-splitting style="border-left: 20px solid #079B70; padding-left:20px;"><strong>Historical </strong> - <strong> Overview:</strong></h1><br><br><br>
+    <h1 data-splitting style="border-left: 20px solid #7bcf7d; padding-left:20px;"><strong>Historical </strong> - <strong> Overview:</strong></h1><br><br><br>
 <p>The surname <strong>Peres Bhatt</strong> is believed to have originated from the <Strong>Brahmin</strong> name Bhatt which is of Indian origin and is derived from the Sanskrit word bhaṭṭa, which means “lord” and is based on bhartr-, which means “lord husband” and is a derivative of bhar-, which means “to bear support.”  </p><br><br><br>
 
 <p> As per the legend, some members of the priestly class in the Konkana community were converted to <strong>Catholicism</strong> by Portuguese missionaries, probably in the 18th century. Their godfathers were the Dukes of Peres, whose surnames were adopted after conversion.</p>
@@ -1106,7 +1102,7 @@ function myFunction() {
 
   <div style="" id="GTREE"> </div> 
   <section data-scroll> 
-    <h1 data-splitting style="border-left: 20px solid #079B70; padding-left:20px;"><strong>Generation </strong> - <strong> Tree:</strong></h1>
+    <h1 data-splitting style="border-left: 20px solid #7bcf7d; padding-left:20px;"><strong>Generation </strong> - <strong> Tree:</strong></h1>
 <p><i>"Let's Discover our Roots"</i><br><br>
 
     <p>Peres Bhatt Generation Tree is a family tree that displays a hierarchical list of descendants of Peres Bhatt in a tree view format. This family tree helps us to trace our ancestors and understand the relationships.</p> <br><br>
@@ -1116,7 +1112,7 @@ function myFunction() {
  </section>
 
 <div id="tree"></div>
-                <div class="" style="float:Left; transform: translate(30px,30px); color:gray; font-size:10px;"><img src="https://www.svgrepo.com/show/10746/resize.svg" width="35" height="35" onclick="openEVENT();" class="hover-shadow cursor">Expand
+                <div class="" style="float:Left; transform: translate(30px,30px); color:gray; font-size:10px;"><img src="https://www.svgrepo.com/show/10746/resize.svg" width="35" height="35" onclick="openGTREE();" class="hover-shadow cursor">Expand
                   </div>  
                 <div id="myTree" class="GTREE" style="z-index:50;"><span class="closeTREE cursor" onclick="closeTree()">&times;</span>
                     <div class="inside-GTREE">
@@ -1142,7 +1138,7 @@ function myFunction() {
     <!--------Goldern memories ------->
   <div id="photos"></div>
   <section  data-scroll >
-    <h1 data-splitting style="border-left: 20px solid #079B70; padding-left:20px;"><strong>Golden </strong> - <strong>Memories:</strong></h1><br>
+    <h1 data-splitting style="border-left: 20px solid #7bcf7d; padding-left:20px;"><strong>Golden </strong> - <strong>Memories:</strong></h1><br>
 <center><img src="https://www.dropbox.com/s/asvp4a4g952ah3p/1623047996193.png?raw=1" alt="Photo Gallery" class="img-fluid" id="photos" width="200" height="200" ></center>
 <p><i>"Life isn't Perfect, but it has perfect Moments & Memories that tells stories of our family"</i><br><br>
     <p><strong>“Golden Memories”</strong> is an album that captures the memories we’ve made along the way and keeps them alive forever. </p><br><br><br>
@@ -1157,7 +1153,7 @@ function myFunction() {
    <!-------Sweet Reminisence---------->
   <div id="#Remeno"></div>
   <section  data-scroll >
-    <h1 data-splitting style="border-left: 20px solid #079B70; padding-left:20px;"><strong>Sweet</strong> - <strong>Reminiscence:</strong></h1><br>
+    <h1 data-splitting style="border-left: 20px solid #7bcf7d; padding-left:20px;"><strong>Sweet</strong> - <strong>Reminiscence:</strong></h1><br>
 <center><img src="https://www.dropbox.com/s/p1kp0yatk89i2rf/card.png?raw=1" alt="Card Collection" class="img-fluid" width="200" height="200" id="Remeno"></center>
 <p><i>“Nothing is ever really lost as long as we remember it.”</i><br><br>
     <p><strong>“Sweet Reminiscence” </strong>is a collection of memories that are cherished and treasured as an Album.</p><br><br><br>
@@ -1175,12 +1171,12 @@ function myFunction() {
  <div id="Kalendar"></div>
 <section  data-scroll ">
 
-  <h1 data-splitting style="border-left: 20px solid #079B70; padding-left:20px;"><strong> Event</strong> - <strong>Calendar:</strong></h1><br> 
+  <h1 data-splitting style="border-left: 20px solid #7bcf7d; padding-left:20px;"><strong> Event</strong> - <strong>Calendar:</strong></h1><br> 
 <!--- <iframe src="calendar.html" height="450" width="100%" title="Event Calendar" scrolling="no"></iframe> ----->   
 
     <!----calendar---->
   <br>
-  <div style="background-color:#079B70;">
+  <div style="background-color:#ddd;">
       <br>
   <center> <div id="calendar" style="-webkit-box-shadow: 0px 29px 26px 0px rgba(184,180,184,1);
 -moz-box-shadow: 0px 29px 26px 0px rgba(184,180,184,1);
@@ -1455,7 +1451,7 @@ box-shadow: 0px 29px 26px 0px rgba(184,180,184,1); "></div>
     <!------Form------->
    <div id="contact"></div>
    <section data-scroll>
-   <h1 data-splitting style="border-left: 20px solid #079B70; padding-left:20px;"><strong>Contact:</strong></h1><br>
+   <h1 data-splitting style="border-left: 20px solid #7bcf7d; padding-left:20px;"><strong>Contact:</strong></h1><br>
    <div class="formcarry-container" style="width:100%;">
 
 <p>If you have any Query, Suggestions or just want to say hello, please feel free to message me. <strong>I would be delighted </strong> to hear from you!</p><br>
