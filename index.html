@@ -252,119 +252,7 @@ font-weight: bold;
 
 <!-----popup----------->
 <link rel="stylesheet" href="pop.css">
-<style>
 
-/* The Modal (background) */
-.modal {
-  display: vivible; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 9999; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-  backdrop-filter: blur(6px);
-
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  left: 50%;
-  top: 50%;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 32px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
- .pcontainer {
-  display: flex;
-  align-items: center;
-  justify-content: center
-}
-
-.pimg {
-  max-width: 100%;
-  max-height:100%;
-
-}
-
-.ptext {
-  font-size: 5px;
-  padding-left: 20px;
-  
-}
-
-
-/* fade */
-
-         .banimated {
-            
-            background-repeat: no-repeat;
-            -webkit-animation-duration: 20s;
-            animation-duration: 20s;
-            -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-         }
-         
-         .canimated {
-            
-            background-repeat: no-repeat;
-            -webkit-animation-duration: 15s;
-            animation-duration: 15s;
-            -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-         }
-         
-         @-webkit-keyframes fade {
-            0% {
-               opacity: 0;
-               -webkit-transform: translateX(0);
-            }
-            100% {
-               opacity: 1;
-               -webkit-transform: translateX(0);
-            }
-         }
-         
-         @keyframes fade {
-            0% {
-               opacity: 0;
-               transform: translateX(0);
-            }
-            100% {
-               opacity: 1;
-               transform: translateX(0);
-            }
-         }
-         
-         .fade {
-            -webkit-animation-name: fade;
-            animation-name: fade;
-         }
-
-
-</style>
 
 
 
@@ -599,6 +487,39 @@ html {
 <body onload="" style="margin-left: 0px; margin-right: 0px;">
 
 
+
+
+
+<!--------popup--------->
+<div id="boxes">
+<div style="top: 50%; left: 50%; display: none; scale:0.7; position:fixed;" id="dialog" class="window"> 
+<div id="san" style="">
+<a href="#" class="close agree"><img src="close-icon.png" width="30" style="float:right; margin-right: 0px; margin-top: 0px;"></a>
+
+           <center>
+           <script type="text/javascript">
+           document.write("<font-size: +2; style=' color: #ddd; '>");
+           var day = new Date();
+           var hr = day.getHours();
+           if (hr >= 0 && hr < 12) {
+           document.write("<img src='morning.png'>" ); 
+           } else if (hr >= 12 && hr <= 15) {
+           document.write("<img src='afternoon.png'>" ); 
+           } else {
+           document.write("<img src='evening.png'>" ); 
+           }
+           document.write("</font><br>");
+           </script> 
+           </center>
+
+           <p style="font-size:30px; color:white; text-align:center; transform: translate(0px,-100px);">Welcome to Peres Bhatt Generation Tree</p>
+           <p style="line-height:0.9; padding:30px; font-size:20px; color:gray; text-align:center; transform: translate(0px,-70px);">⚠️ Please refrain from any misuse of data and images from this website.</p>
+</div>
+</div>
+<div style="width: 2478px; font-size: 32pt; color:white; height: 1202px; display: none; opacity: 0.4;" id="mask"></div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script> 
+<script src="pop.js"></script>
 
 
 
@@ -988,39 +909,6 @@ function myFunction() {
 
 <div class="parallax" >
 <div class="site-wrap">
-
-
-
-<!--------Salutation--------->
-<div id="boxes">
-<div style="top: 50%; left: 50%; display: none; scale:0.7" id="dialog" class="window"> 
-<div id="san" style="">
-<a href="#" class="close agree"><img src="close-icon.png" width="30" style="float:right; margin-right: 0px; margin-top: 0px;"></a>
-
-           <center>
-           <script type="text/javascript">
-           document.write("<font-size: +2; style=' color: #ddd; '>");
-           var day = new Date();
-           var hr = day.getHours();
-           if (hr >= 0 && hr < 12) {
-           document.write("<img src='morning.png'>" ); 
-           } else if (hr >= 12 && hr <= 15) {
-           document.write("<img src='afternoon.png'>" ); 
-           } else {
-           document.write("<img src='evening.png'>" ); 
-           }
-           document.write("</font><br>");
-           </script> 
-           </center>
-
-           <p style="font-size:30px; color:white; text-align:center; transform: translate(0px,-100px);">Welcome to Peres Bhatt Generation Tree</p>
-           <p style="font-size:12px; color:gray; text-align:center; transform: translate(0px,-50px);">Please refrain from any misuse of data and images from this website.</p>
-</div>
-</div>
-<div style="width: 2478px; font-size: 32pt; color:white; height: 1202px; display: none; opacity: 0.4;" id="mask"></div>
-</div>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script> 
-<script src="pop.js"></script>
 
 
 
