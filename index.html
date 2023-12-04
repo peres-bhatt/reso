@@ -483,12 +483,39 @@ html {
 
 <!-------ctdntx----->
 <style>
+
+
 .cndntx {
   font-size: 16px;
-  display: inline;
-  color: gray;
+   display: inline;
+  //color: white;
 }
 </style>
+
+
+<!--- viewport size display----->
+
+        <style>
+            // @media (max-width: 992px) and (min-width:601px) {
+                .w3-hide-medium {
+                    display:none!important
+                }
+            }
+
+            @media (min-width: 601px) {
+                .w3-hide-medium {
+                    display:none!important
+                }
+            }
+
+            @media (max-width: 600px) {
+                .w3-hide-small {
+                    display:none!important
+                }
+            }
+        </style>
+
+
 
 
 
@@ -950,7 +977,7 @@ function myFunction() {
                   </div>  
                 <div id="myTree" class="GTREE" style="z-index:50;"><span class="closeTREE cursor" onclick="closeTree()">&times;</span>
                     <div class="inside-GTREE">
-                      <div class=""><iframe src="GTREE.html" title="Generation Tree" height="500" width="100%" scrolling="" ></iframe>
+                      <div class=""><iframe src="GTREE.html" title="Generation Tree"  style="width:100%;height:90vh" scrolling="" ></iframe>
                       </div>
                     </div>
                 </div>  
@@ -964,6 +991,7 @@ function myFunction() {
        </script>
 
    <iframe src="GTREE.html" height="500" width="100%" title="Generation Tree" scrolling=""> </iframe>
+   
 
 
 <br><br>
@@ -977,17 +1005,38 @@ function myFunction() {
 <p><i>"Life isn't Perfect, but it has perfect Moments & Memories that tells stories of our family"</i><br><br>
     <p><strong>“Golden Memories”</strong> is an album that captures the memories we’ve made along the way and keeps them alive forever. </p><br><br><br>
 <p>It’s a collection of photos from the Peres Bhatt family that commemorates the moments we’ve shared together. The album is like a treasure trove of golden memories that we can revisit and cherish for years to come.</p><br>
-<p class="hover-underline-animation"><a href="https://photos.app.goo.gl/8V2FxrUzH4R2tAmA6" target="_blank"><font color="#076c12"><font-weight="normal">View Photo Gallery..</font></a></p> 
+<p class="hover-underline-animation"><a href="https://photos.app.goo.gl/8V2FxrUzH4R2tAmA6" target="_blank"><font color="#076c12"><font-weight="normal">View Photo Gallery..</font></a></p><br><br><br>
 
-<br><br><hr>
-<h4 class="cndntx"><strong>Cherished Memories:</strong></h4><br><br>
 
-<h4 class="cndntx"><i>As time passes, revisiting old photographs can evoke fond memories and provide a sense of nostalgia.</i><br><br>
-Kindly note that I keep uploading photos when they are at least 5 years old. I'll be uploading the photos to the "Golden Memories" album every 5 years to preserve the memories. The next upload will be</h4> <h4 class="cndntx" id="cntdn"></h4>
+ <div class="w3-hide-small">
+<iframe src="5ymem.html" height="550" width="100%" title="Event Calendar" scrolling="no" id="5ymem" padding="0px"></iframe>
+ </div>
 
+<div class="w3-hide-medium">
+<center>
+
+        <h1> Five-Year Memories</h1>
+        <h4 class="cndntx"><i>As time passes, revisiting old photographs can evoke fond memories and provide a sense of nostalgia.</i><br><br>
+Kindly note that I keep uploading photos when they are about 5 years old. I'll be uploading the photos to the "Golden Memories" album every 5 years to preserve the memories. The next upload will be</h4><h4 id="cntdn"></h4></div></center>
+</div>
 <script src="cntdn.js"></script>
+</section> 
 
-  </section>
+
+
+<!-- partial -->
+  <script src='https://unpkg.com/splitting@1.0.0/dist/splitting.js'></script>
+<script src='https://unpkg.com/scroll-out@2.2.3/dist/scroll-out.min.js'></script>
+<script  src="script.js"></script>
+
+ </div>  <!--- parallax ------->
+
+
+
+<!------parallax 2-------->
+
+<div class="parallax" >
+<div class="site-wrap">
 
 
    <!-------Sweet Reminisence---------->
@@ -1246,7 +1295,7 @@ box-shadow: 0px 29px 26px 0px rgba(184,180,184,1); "></div>
                   </div>  
                 <div id="myEVE" class="GTREE" style="z-index:51;"><span class="closeTREE cursor" onclick="closeEVENT()">&times;</span>
                     <div class="inside-GTREE">
-                      <div class=""><iframe src="life-events.html" title="Life events" height="500" width="100%" scrolling="" ></iframe>
+                      <div class=""><iframe src="life-events.html" title="Life events" style="width:100%;height:90vh" scrolling="" ></iframe>
                       </div>
                     </div>
                 </div>
@@ -1296,8 +1345,11 @@ box-shadow: 0px 29px 26px 0px rgba(184,180,184,1); "></div>
    <h1 data-splitting style="border-left: 20px solid #7bcf7d; padding-left:20px;"><strong>Contact:</strong></h1><br>
    <div class="formcarry-container" style="width:100%;">
 
-<p>If you have any Query, Suggestions or just want to say hello, please feel free to message me. <strong>I would be delighted </strong> to hear from you!</p><br>
-<p> Please fill the form below.</p><br><br><br>    
+<img src="https://mailtrap.io/wp-content/uploads/2022/03/Featured_image_2080x-1080_background_code_F9F9F7-700x364.png" width="500" height="600">
+
+
+<p>If you have any Query, Suggestions or just want to say hello, <strong>please feel free to message me</strong>. I would be delighted to hear from you!</p><br>
+<p> Please fill the form below.</p><br>  
 
 
 
@@ -1310,7 +1362,7 @@ box-shadow: 0px 29px 26px 0px rgba(184,180,184,1); "></div>
   display: block;
   margin-left: auto;
   margin-right: auto;
-  transform: translate(0px,-280px);
+  transform: translate(40px,-280px);
   z-index: -1;
 }
 </style>
