@@ -197,6 +197,7 @@ dA[x++] = "00001216  <h5>JEROME SALVADOR REGO(68)'s Death Anniversary (1968, Kul
 dA[x++] = "00001219  <h5>YVONE (LOBO) PINTO's Birthday <br><br>";
 dA[x++] = "00001220  <h5>MAJOR EUSTACE REBELLO(36)'s Death Anniversary (1961, Ferozepore, Punjab)<br><br>";
 dA[x++] = "00001226  <h5>NANCY RITA (PERES BHATT) D'MELLO's Birthday  (1938) <br><br> JACINTHA PRAMILA (MONTERIO) PERES BHATT's Birthday <br><br> ARUN WILLIAM - JYOTHSNA WINIFRED (PERIS BHATT) D'SOUZA's Wedding Anniversary (2008) <br><br>";
+dA[x++] = "00001228  <h5>RALPH AVINASH - ASHTRIN AMOLA (PINTO) MENEZES's Wedding Anniversary (2023) <br><br>";
 dA[x++] = "00001229  <h5>JOSHUA HENRY - SONIA MONICA (FERNANDES) PERIS BHATT's Wedding Anniversary (2008)<br><br> MUKESH - SAMATHA (BENEDICT)'s Wedding Anniversary (2021) <br><br>";
 dA[x++] = "00001231  <h5>SUSANA NÈLIDA DIM(44)'s Birthday (1953, Buenos Aires, Argentina) <br><br>";
 // dA[x++] = "20060610 New Event Calendar Started today";
