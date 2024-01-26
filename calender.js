@@ -29,6 +29,7 @@ dA[x++] = "00000118  <h5>FR. JULIUS RASQUINHA's Birthday <br><br> TANUSHRI PERES
 dA[x++] = "00000119  <h5>RAJIV BASIL's Death Anniversary (1958) <br><br>"
 dA[x++] = "00000123  <h5>MARY RASQUINHA (PERES BHATT)'s Birthday <br><br>";
 dA[x++] = "00000125  <h5>ALEX RODRIGUES's Death Anniversary (1966) <br><br>";
+dA[x++] = "00000126  <h5>Gladson Joseph - Lavina (D'Souza) Peres Bhatt's Wedding Anniversary <br><br>";
 dA[x++] = "00000127  <h5>BONAVENTURE MANUEL REGO's Birthday (1866) <br><br>";
 dA[x++] = "00000130  <h5>SUSAN QUADRAS (RASQUINHA)'s Birthday<br><br> ROBERT RUDOLPH MISQUITH(71)'s Death Anniversary <br><br>";
 dA[x++] = "00000201  <h5>BONAVENTURE MANUEL- ESPERANCA (PERES BHATT) REGO Wedding Anniversary (1889, Rosario Cathedral, Mangalore) <br><br>";
