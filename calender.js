@@ -13,7 +13,7 @@ var dA = new Array(); var x = 0;
 // first 8 characters in ccyymmdd format for single date events
 // first 8 characters in 0000mmdd format for every year events
 dA[x++] =  "00000101  <h5>JULIET D'MELLO's Birthday <br><br>VANDANA D'MELLO (CARLO)'s  Birthday <br><br>"; 
-dA[x++] =  "00000102  <h5>CECIL GREGORY CHRISTOPHER - RANEE GLAPHYRA (PERES BHATT) NORONHA's wedding anniversary <br><br>";
+dA[x++] =  "00000102  <h5>CECIL GREGORY CHRISTOPHER - RANEE GLAPHYRA (PERES BHATT) NORONHA's wedding anniversary <br><br> LORNA LOBO (CUNHA)'s Death Anniversary (2025 | Resurrection Church, Kalpalli, Bangalore) <br><br>";
 dA[x++] =  "00000104  <h5>MARVIN COELHO's Birthday <br><br>";
 dA[x++] =  "00000105  <h5>LAVINA PERES BHATT (D'SOUZA)'s Birthday <br><br>";
 dA[x++] = "00000106  <h5>JEROME AUGUSTINE - JOYCE PERES BHATT wedding anniversary<br><br> JOSEPH ANTONY - BENEDICTA (FERNANDES) PERES BHATT's wedding anniversary (1969)<br><br>  MARINA GAONKAR (PINTO)'s Birthday <br><br>";
@@ -180,9 +180,10 @@ dA[x++] = "00001111  <h5>MARTIN ANTONY ROSARIO SEQUEIRA KAMATH's Birthday (1902)
 dA[x++] = "00001114  <h5>JEROME SALVADOR - ALERTINA ELIZABETH EVELYN (D'SOUZA) REGO's Wedding Anniversary (1934, Nungambakam, Madras) <br><br>";
 dA[x++] = "00001116  <h5>SHOBA JANE (SEQUEIRA) PERES BHATT's Birthday <br><br> DALE PATRAO's Birthday <br><br>";
 dA[x++] = "00001118  <h5>DIONYSIUS FRANCIS D'MELLO's Birthday <br><br> HARROLD PERES BHATT's Death Anniversary <br><br> JOHN GRATIAN PERES BHATT(63)'s Death Anniversary (1967) <br><br>";
+dA[x++] = "00001120  <h5> DERRICK JOHN D'MELLO(63)'s, Death Anniversary (2024) <br><br>";
 dA[x++] = "00001121  <h5>MARGARET (PINTO) PATRAO's (2015. Bendore, Mangaluru)<br><br>NATHALIA PERES BHATT(1)'s Birthday (1864)<br><br>";
 dA[x++] = "00001122  <h5>GRATIAN ALEXIS PINTO(79)'s Birthday (1911)<br><br>";
-dA[x++] = "00001124  <h5>MERRYL MENEZES(67)'s Birthday  (1954)<br><br>";
+dA[x++] = "00001124  <h5>MERRYL MENEZES(67)'s Birthday  (1954)<br><br> Lorna Lobo (Cunha)(86)'s Birthday  (1938) <br><br>";
 dA[x++] = "00001125  <h5>COSMOS PERES BHATT's Death Anniversary <br><br>";
 dA[x++] = "00001129  <h5>KEONA LEANNE LOBO's Birthday <br><br>";
 dA[x++] = "00001201  <h5>LEO PERES BHATT - JOANNA MACHADO's Wedding Anniversary (1893, Urwa, Mangaluru) <br><br>";
@@ -195,11 +196,13 @@ dA[x++] = "00001211  <h5>LILY MARCELINE (PERES BHATT) PINTO's Birthday <br><br> 
 dA[x++] = "00001214  <h5>BRIGADIER STANISLAUS ALPHONSE NICASIUS SEQUIERA KAMATH(75)'s Birthday (1918)<br><br>";
 dA[x++] = "00001215  <h5>RITA (MADTHA) PERES BHATT's Birthday <br><br>";
 dA[x++] = "00001216  <h5>JEROME SALVADOR REGO(68)'s Death Anniversary (1968, Kulshekar, Mangaluru) <br><br>";
-dA[x++] = "00001219  <h5>YVONE (LOBO) PINTO's Birthday <br><br>";
+dA[x++] = "00001219  <h5>YVONE (LOBO) PINTO's Birthday <br><br> CHRIS NICHOLAS PERES's Birthday <br><br>";
 dA[x++] = "00001220  <h5>MAJOR EUSTACE REBELLO(36)'s Death Anniversary (1961, Ferozepore, Punjab)<br><br>";
+dA[x++] = "00001225  <h5>CHRISTER EMMANUEL FERNANDES's Birthday <br><br>";
 dA[x++] = "00001226  <h5>NANCY RITA (PERES BHATT) D'MELLO's Birthday  (1938) <br><br> JACINTHA PRAMILA (MONTERIO) PERES BHATT's Birthday <br><br> ARUN WILLIAM - JYOTHSNA WINIFRED (PERIS BHATT) D'SOUZA's Wedding Anniversary (2008) <br><br>";
+dA[x++] = "00001227  <h5> MUKESH - SAMATHA (BENEDICT)'s Wedding Anniversary (2021) <br><br>";
 dA[x++] = "00001228  <h5>RALPH AVINASH - ASHTRIN AMOLA (PINTO) MENEZES's Wedding Anniversary (2023) <br><br>";
-dA[x++] = "00001229  <h5>JOSHUA HENRY - SONIA MONICA (FERNANDES) PERIS BHATT's Wedding Anniversary (2008)<br><br> MUKESH - SAMATHA (BENEDICT)'s Wedding Anniversary (2021) <br><br>";
+dA[x++] = "00001229  <h5>JOSHUA HENRY - SONIA MONICA (FERNANDES) PERIS BHATT's Wedding Anniversary (2008)<br><br> Harmon Roshan Victor - Sangeeta PERIS BHATT's Wedding Anniversary<br><br> Dominic John - Annette D'Mello's Wedding Anniversary<br><br>";
 dA[x++] = "00001231  <h5>SUSANA NÈLIDA DIM(44)'s Birthday (1953, Buenos Aires, Argentina) <br><br>";
 // dA[x++] = "20060610 New Event Calendar Started today";
 

@@ -83,7 +83,15 @@ document.onkeydown = function(e) {
   
 }
 
-      .container:after {
+
+  
+      img {
+        max-width: 30% ;
+        
+      }
+      
+  
+       .container:after {
        position: relative;
   content: "";
   display: table;
@@ -91,11 +99,6 @@ document.onkeydown = function(e) {
   
   
   }
-  
-      img {
-        max-width: 100% ;
-        
-      }
       
       
       .image {
@@ -119,6 +122,9 @@ document.onkeydown = function(e) {
   }
 }
 
+
+
+
 </style>
 
 </head>
@@ -127,9 +133,12 @@ document.onkeydown = function(e) {
  
 <div class="container">
 
-    <div class="image"><img src="https://www.dropbox.com/scl/fi/jrtnevgqnzrdzz3r3nwbo/1000003220.jpg?rlkey=4yq3sjgs9o15iuz9na5256mlr&raw=1" alt="Paris" style="width:50%;   display: block; margin-left: auto; margin-right: auto;">
+    <div class="image"><img src=" QR_code.jpg " alt="Paris" style="width:100%;   display: block; margin-left: auto; margin-right: auto;">
    
- <input type="text" value="https://peres-bhatt.github.io/family-tree/" id="myInput">
+   
+   <center>
+   
+ <input type="text" value="https://peres-bhatt.github.io/family-tree/" id="myInput" size="20">
 
 <div class="tooltip">
 <button onclick="myFunction()" onmouseout="outFunc()">
@@ -157,10 +166,12 @@ function outFunc() {
 
 </div>
 
-<div class="text">
- <p>This website is intended for family use only. Please feel free to share it with other family members.</p>
+</center><br>
+
+<div class="#text" style="padding-left: 50px; padding-right: 50px; padding-top: 10px;">
+ <div>This website is intended for family use only. Please feel free to share it with other family members.</div> <br>
  
- <p> You may copy this link to your clipboard and paste it into an email, chat, or any other text field or directly scan the QR code.</p>
+ <div> You may copy this link to your clipboard and paste it into an email, chat, or any other text field or directly scan the QR code.</div>
  
  </div>
  </div>
