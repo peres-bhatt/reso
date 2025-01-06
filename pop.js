@@ -31,12 +31,14 @@ $(document).ready(function() {
 		
 		$('#mask').hide();
 		$('.window').hide();
+
 	});		
 	
 	//if mask is clicked
 	$('#mask').click(function () {
 		$(this).hide();
 		$('.window').hide();
+
 	});		
 	
 });
