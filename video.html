@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Carousel Links</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    
+    .youtube-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .youtube-modal iframe {
+      max-width: 90%;
+      max-height: 90%;
+    }
+
+        .youtube-modal .close-button {
+      position: absolute;
+      top: 10px; /* Adjust top position as needed */
+      right: 10px; /* Adjust right position as needed */
+      background-color: #aaa;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    /* *********
+  SVG PLAY BUTTON
+********** */
+
+.stroke-dotted {
+  stroke-dasharray: 4, 5;
+  stroke-width: 1px;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-animation: spin 4s infinite linear;
+  animation: spin 4s infinite linear;
+  -webkit-transition: opacity 1s ease, stroke-width 1s ease;
+  transition: opacity 1s ease, stroke-width 1s ease;
+}
+.stroke-solid {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 300;
+  stroke-width: 4px;
+  -webkit-transition: stroke-dashoffset 1s ease, opacity 1s ease;
+  transition: stroke-dashoffset 1s ease, opacity 1s ease;
+  opacity: 0;
+}
+.vid-icon {
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  transition: -webkit-transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
+}
+.play-vid:hover .stroke-dotted {
+  stroke-width: 4px;
+  opacity: 1;
+}
+.play-vid:hover .stroke-solid {
+  opacity: 1;
+  stroke-dashoffset: 300;
+}
+.play-vid:hover .icon {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  opacity: 1;
+}
+.play-vid {
+  cursor: pointer;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.85;
+  width: 110px;
+  height: 110px;
+}
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* Carousel Caption */
+    .custom-caption {
+      position: absolute;
+      bottom: 0; /* Position caption at the top */
+      left: 0px;
+      width: 100%; 
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 20px;
+      border-radius: 5px;
+      transform: translate(0, -50px);
+      
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="container" style="scale: 1;">
+
+<!----
+<h3>A Journey Through Time</h3>
+  <h6>A Carousel of Videos Capturing Joyful Celebrations, Heartfelt Gatherings, and Solemn Farewells</h6> ---->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="item active">
+      
+        <img src="https://img.youtube.com/vi/ZxG5VtR67T8/sddefault.jpg" alt="Fabian Peres Bhatt (1952-2022)" style="width:100%;" > 
+        
+        <div class="custom-caption">
+        <div>In loving memory of Fabian Peres Bhatt (1952-2022), A Tribute to His Remarkable Life.</div>
+      </div>
+        
+        <svg  class="play-vid" viewBox="0 0 100 100" data-youtube-link="https://www.youtube.com/embed/ZxG5VtR67T8?enablejsapi=1&autoplay=1&modestbranding=1&rel=0&playlist=ZxG5VtR67T8&loop=1&mute=1">
+        <path class="stroke-solid" fill="none" stroke="white"  d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
+         C97.3,23.7,75.7,2.3,49.9,2.5"/>
+        <path class="stroke-dotted" fill="none" stroke="white"  d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
+         C97.3,23.7,75.7,2.3,49.9,2.5"/>
+        <path class="vid-icon" fill="white" d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z"/>
+      </svg>
+      
+     
+      
+      </div>
+<!------------------------------->
+      <div class="item">
+        <img src="https://img.youtube.com/vi/EmzppxqsInc/sddefault.jpg" alt="Lorna Lobo (1938-2025)" style="width:100%;" > 
+        
+        <div class="custom-caption">
+        <div>In loving memory of Lorna Lobo (1938-2025), A Tribute to Her Remarkable Life. </div>
+      </div> 
+      
+        
+        <svg  class="play-vid" viewBox="0 0 100 100" data-youtube-link="https://www.youtube.com/embed/EmzppxqsInc?enablejsapi=1&autoplay=1&modestbranding=1&rel=0&playlist=EmzppxqsInc&loop=1&mute=1" >
+        <path class="stroke-solid" fill="none" stroke="white"  d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
+         C97.3,23.7,75.7,2.3,49.9,2.5"/>
+        <path class="stroke-dotted" fill="none" stroke="white"  d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
+         C97.3,23.7,75.7,2.3,49.9,2.5"/>
+        <path class="vid-icon" fill="white" d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z"/>
+      </svg>
+      
+      
+      
+      </div>
+      
+      
+<!--------------------------------->
+      <div class="item">
+      
+ 
+ <img src="https://img.youtube.com/vi/NZ99AwRPpy8/sddefault.jpg" alt="Samantha Dharmaraj & Mukesh" style="width:100%;"> 
+       
+       <div class="custom-caption">
+        <div>Wedding ceremony of <strong>Samantha Dharmaraj & Mukesh</strong> on 27th December  2021 at St. Xavier's Cathedral, Bangalore.</div>
+      </div> 
+      
+      
+        <svg  class="play-vid" viewBox="0 0 100 100" data-youtube-link="https://www.youtube.com/embed/NZ99AwRPpy8?enablejsapi=1&autoplay=1&modestbranding=1&rel=0&playlist=NZ99AwRPpy8&loop=1&mute=1">
+        <path class="stroke-solid" fill="none" stroke="white"  d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
+         C97.3,23.7,75.7,2.3,49.9,2.5"/>
+        <path class="stroke-dotted" fill="none" stroke="white"  d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
+         C97.3,23.7,75.7,2.3,49.9,2.5"/>
+        <path class="vid-icon" fill="white" d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z"/>
+      </svg>
+      
+      
+   
+      
+    </div>
+
+<!------------------------------------>
+
+<div class="item">
+      
+ 
+ <img src="https://www.dropbox.com/scl/fi/j6qwk3qlzhp43ww7vytdq/1000029971.jpg?rlkey=pvnllm1ogflhjmm0k441d7051&st=47jw0lxo&raw=1" alt="Lawrence" style="width:100%;">
+ 
+ 
+ <div class="custom-caption">
+        <div>A Sweet and Memorable Celebration for Lawrence Peres Bhatt's 75th Birthday </div>
+      </div> 
+      
+       
+        <svg  class="play-vid" viewBox="0 0 100 100" data-youtube-link="https://www.dropbox.com/scl/fi/f4mcqftueawfe9j9k6yj8/75year-Birthday.mp4?rlkey=xylwwpc3a2bssc4v851ipos85&st=3tt9dtrn&raw=1">
+        <path class="stroke-solid" fill="none" stroke="white"  d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
+         C97.3,23.7,75.7,2.3,49.9,2.5"/>
+        <path class="stroke-dotted" fill="none" stroke="white"  d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
+         C97.3,23.7,75.7,2.3,49.9,2.5"/>
+        <path class="vid-icon" fill="white" d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z"/>
+      </svg>
+      
+      
+   
+      
+    </div>
+
+
+
+
+
+<!------------------------------------>
+
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<br><br><br>
+
+<!--------------------------------------footer------------------->
+
+ 
+    
+
+
+
+
+<script>
+$(document).ready(function() {
+  $('.play-vid ').click(function() {
+    var youtubeLink = $(this).data('youtube-link');
+
+    // Create and display YouTube iframe in modal
+    var modalHtml = `
+      <div class="youtube-modal">
+        <button class="close-button">Close</button> 
+        <iframe width="560" height="315" src="${youtubeLink}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+      </div>
+    `;
+    $('body').append(modalHtml);
+
+    // Close modal on click outside the iframe or on close button
+    $('.youtube-modal').click(function(event) {
+      if (event.target === this || event.target.classList.contains('close-button')) {
+        $(this).remove();
+      }
+    });
+  });
+});
+</script>
+
+</body>
+</html>

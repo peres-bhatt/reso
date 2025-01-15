@@ -7,33 +7,50 @@
   left:0;
   top:0;
   z-index:9000;
- // background-color:#26262c;
-   background-color:white;
+// background-color:#26262c;
+//   background-color:white;
+background-image: url("WallpaperDog-20487262.jpg");
   display:none;
-  filter: opacity(0.8);
-  backdrop-filter: blur(8px);
+// filter: opacity(0.9);
+ // backdrop-filter: blur(8px);
+/* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 
 }  
 #boxes .window {
   position:absolute;
   left:0;
   top:0;
-  width:440px;
+  width:500px;
   height:850px;
   display:none;
   z-index:9999;
   padding:20px;
   border-radius: 5px;
   text-align: center;
-box-shadow: 0px 20px 80px 5px black;
+box-shadow: 0px 40px 100px 5px #000;
 }
+
+
 #boxes #dialog {
-  width:450px; 
+  width:500px; 
   height:auto;
   padding: 10px 10px 10px 10px;
-  background-color:#ffffff;
+ // background-color:#ffffff;
+// background-color:#19191c;
   font-size: 15pt;
+
+  /* The image used */
+  background-image: url("pj.jpg");
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+
 
 .agree:hover{
   background-color: #D1D1D1;
